@@ -1,0 +1,170 @@
+
+.carousel-event {
+    /* height: calc(80vw * 0.6 * 1.5); */
+    max-height:820px;
+}
+.carouselSlider{
+    /* min-height: 600px; */
+    height: 100/3%;
+}
+.event-slider-wrapper{
+    position:relative;
+    max-height:670px;
+    height: calc(48vw * 0.6 + 75px);
+    /* height:calc(85vh * 0.6 + 25px); */
+    margin-bottom:2vh;
+}
+
+.carousel-indicators{
+    position:absolute;
+    bottom:0;
+    /* margin-bottom:0; */
+}
+.carousel-indicators li{
+    height:calc(18px + 1vw) !important;
+    width:calc(18px + 1vw) !important;
+    border-radius: 50%;
+    background-color: grey;
+    margin:0 .5%;
+}
+
+
+.carousel-indicators .active {
+    background-color:rgba(0, 153, 102);
+}
+
+.text-bg{
+    width:100%;
+    position:absolute;
+    padding:calc(2px + .4vw) calc(2px + 1vw);
+    background:rgba(0, 153, 102, 0.8);
+    color:white;
+    bottom:0;
+    
+}
+.text-bg h4{
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    overflow:hidden;
+    font-size:calc(8px + 1.2vw);
+}
+.text-bg h3{
+    font-size:calc(12px + 1.2vw);
+}
+.carousel-item img{
+     /* position:relative; */
+     display:block;
+     width:100%;
+     
+}
+.carousel-item{
+    transition: transform .6s ease-in-out;
+    max-height:575px;
+    overflow: hidden;
+    height:calc(44vw * 0.6 + 25px);
+    /* height:calc(70vh * 0.6 + 25px); */
+}
+.carousel-inner{
+   width:55%;
+    padding-top:5px;
+    margin:0 auto;
+}
+.carousel-inner img{
+   object-fit:fill;
+}
+.event-category{
+    color: rgba(0, 153, 102);
+    margin-top:-1%;
+}
+.greenline2{
+    width:34rem;
+    height:4px;
+    background: rgba(0, 153, 102);
+}
+.greenline{
+    width:34rem;
+    height:4px;
+    background: rgba(0, 153, 102);
+}
+.carousel-control-prev-icon, .carousel-control-next-icon{
+    background-color:rgb(170, 170, 170) !important;
+    width:calc(35px + 1.8vw) !important;
+    height:calc(35px + 1.8vw) !important;
+    padding:12px !important;
+    border-radius: 50%;
+    font-size: 1rem !important;
+   
+}
+.search-form{
+    margin:5% auto;
+}
+
+@media screen and (max-width: 768px) {
+    .taiwanMap{
+        right:10%;
+        margin-top:10%;
+        width:110%;
+    }
+    .search-form{
+        margin-top:-5%;
+    }
+    .search-form{
+        margin:0 auto;
+    }
+    /* .event-slider-wrapper{
+        height:45vh;
+    } */
+}
+@media (min-width: 786px) and (max-width: 850px) {
+    .taiwanMap{
+        right:10%;
+        margin-top:5%;
+        width:160%;
+    }
+ 
+    /* .event-slider-wrapper{
+        height:65vh;
+    } */
+
+}
+@media (min-width: 850px) and (max-width: 1100px) {
+    .taiwanMap{
+        right:10%;
+        margin-top:5%;
+        width:160%;
+    }
+ 
+    /* .event-slider-wrapper{
+        height:68vh;
+    } */
+
+}
+@media (min-width: 1100px) and (max-width: 1200px) {
+    .taiwanMap{
+        right:30%;
+        margin-top:-25%;
+        width:140%;
+    }
+  
+}
+@media (min-width: 1200px) and (max-width: 1361px) {
+    .taiwanMap{
+        right:30%;
+        margin-top:-25%;
+        width:140%;
+    }
+
+   
+}
+
+@media (min-width: 510px) and (max-width: 930px) {
+
+ 
+    .carousel-control-prev  {
+        top:-35%;
+    }
+    .carousel-control-next{
+        top:-35%;
+    }
+
+}

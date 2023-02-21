@@ -1,0 +1,268 @@
+.row{
+  padding:0!important;
+  width: 100%;
+  margin: 0;
+}
+/* .d-flex{
+    display:flex;
+    justify-content: space-between;
+   
+} */
+.title{
+    margin:20px calc(20px + 4vw);
+    font-size:calc(20px + 2vw);
+    position:absolute;
+    z-index:1;
+    color:white;
+    text-shadow: -1px 2px 2px rgb(87, 86, 86), 1px 2px 2px  rgb(87, 86, 86), 1px 2px 2px rgb(87, 86, 86), 2px -1px 2px rgb(87, 86, 86);
+    font-weight:500;
+    filter: contrast(200%);
+}
+.category-bar{
+    width:100%;
+    height:250px;
+    color:white;
+    margin:0;
+  
+}
+.ac-footer{
+  margin-top:-140px;
+}
+
+.green-restaurant{
+  background:linear-gradient(to right, rgb(230, 227, 96) 25%, rgba(230, 228, 96, 0));
+
+}
+  .green-restaurant .overlay {
+    background-color: rgb(230, 227, 96);
+  }
+
+  .green-restaurant:hover .overlay {
+    opacity: 1;
+  }
+  .category-bar{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    
+  }
+
+.green-travel{
+    background: linear-gradient(to right, rgb(154, 188, 243) 25%, rgba(230, 228, 96, 0));
+  
+}
+
+
+.green-shop{
+  background:linear-gradient(to right, rgb(240, 148, 136) 25%, rgba(230, 228, 96, 0));
+}
+
+.green-travel .overlay {
+  background-color: rgb(138, 194, 216);
+}
+
+  .category-bar:hover .overlay {
+    opacity: 0;
+    
+  }
+
+  
+
+  .category-bar:hover .image {
+    transition:.8s ease-in-out;
+   
+   opacity: 0.7;
+   
+  }
+  
+  .green-travel:hover .image {
+    /* transition:1.2s ease-in-out;
+    transform: scale(1.2);
+   opacity: 0.7; */
+   transition:.8s ease-in-out;
+   opacity: 0.7;
+  }
+  .category-bar .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .8s ease;
+  }
+
+  .green-hotel{
+    background: linear-gradient(to right, rgb(133, 240, 156) 25%, rgba(230, 228, 96, 0));
+}
+.green-office{
+  background: linear-gradient(to right, #0d92bedf, rgba(230, 228, 96, 0));
+}
+.category-bar .image {
+    display: block;
+    width:135%;
+    
+    opacity: 0.2;
+   margin-left:-15px;
+   position:absolute;    
+  }
+
+  .green-shop{
+    background:linear-gradient(to right, rgb(240, 148, 136) 25%, rgba(230, 228, 96, 0));
+}
+
+
+  .green-shop .overlay {
+    background-color:rgb(205, 137, 245);
+  }
+
+  .green-verify-hotel{
+    background:linear-gradient(to right, rgb(214, 163, 243) 25%, rgba(230, 228, 96, 0));
+
+}
+
+
+  .green-verify-hotel .overlay {
+    background-color:rgb(113, 235, 249) ;
+   
+  }
+
+  .green-verify-product{
+    background:linear-gradient(to right, rgb(113, 235, 249) 25%, rgba(230, 228, 96, 0));
+}
+
+
+  .green-verify-product .overlay {
+    background-color: rgb(255, 89, 247);
+  }
+
+  .green-product{
+    background:linear-gradient(to right, rgb(241, 160, 10) 25%, rgba(230, 228, 96, 0));
+}
+
+
+  .green-product .overlay {
+    background-color: rgb(241, 160, 10);
+  }
+
+  .gis-map{
+    background:linear-gradient(to right, rgb(59, 141, 83) 25%, rgba(230, 228, 96, 0));
+}
+
+
+  .gis-map .overlay {
+    background-color: rgb(59, 141, 83);
+  }
+  .green-Pur-Chase{
+    background:linear-gradient(to right,rgb(191, 194, 192) 25%, rgba(230, 228, 96, 0));
+  }
+  .green-Pur-Chase .overlay {
+    background-color: #E6E6E6;
+  }
+  
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+    /*近期開放-綠色商店*/
+    .green-shop h1#e {
+      display: inline;
+    }
+    
+    .green-shop:hover h1#e {
+      display: none;
+    }
+    
+    .green-shop h1#f {
+      display: none;
+    }
+    
+    .green-shop:hover h1#f {
+      display: inline;
+    }
+
+
+   /*近期開放-環保產品*/
+    .green-verify-hotel h1#g {
+      display: inline;
+    }
+    
+    .green-verify-hotel:hover h1#g {
+      display: none;
+    }
+    
+    .green-verify-hotel h1#h {
+      display: none;
+    }
+    
+    .green-verify-hotel:hover h1#h {
+      display: inline;
+    }
+
+
+   /*近期開放-產品碳足跡*/
+    .green-verify-product h1#i {
+      display: inline;
+    }
+    
+    .green-verify-product:hover h1#i {
+      display: none;
+    }
+    
+    .green-verify-product h1#j {
+      display: none;
+    }
+    
+    .green-verify-product:hover h1#j {
+      display: inline;
+    }
+
+    
+   /*近期開放-GIS整合查詢*/
+   .gis-map h1#k {
+    display: inline;
+  }
+  
+  .gis-map:hover h1#k {
+    display: none;
+  }
+  
+  .gis-map h1#l {
+    display: none;
+  }
+  
+  .gis-map:hover h1#l {
+    display: inline;
+  }
+
+     /*近期開放-綠色辦公*/
+     .green-office h1#a {
+      display: inline;
+    }
+    
+    .green-office:hover h1#a {
+      display: none;
+    }
+    
+    .green-office h1#b {
+      display: none;
+    }
+    
+    .green-office:hover h1#b {
+      display: inline;
+    }
+
+    
+    
+
+
+

@@ -1,0 +1,49 @@
+#link_bar li a {
+    width: 140px;
+    font-weight: normal !important;
+    font-size: calc(10px + 0.5vw) !important;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+}
+
+.tab-pane table {
+    text-align: center;
+}
+
+.table-report thead tr th {
+    width: 50%;/*250px;*/
+}
+
+.Tabside {
+    padding: 0;
+    width: 100%;
+    padding-bottom: 20px;
+    margin-left: 10px;
+}
+
+.Tabside ul {
+    list-style: none;
+    margin: 18px 0 0 -30px;
+}
+
+.Tabside li {
+    float: left;
+    padding: 0px;
+    margin: 0px -2px;
+    display: inline-block;
+}
+
+.Tabside li a {
+    padding: 14px 30px 13px 30px;
+    background: #eee;
+    font-weight: bold;
+    font-size: 22px;
+    display: block;
+}
+
+.Tabside li a:hover, .Tabside li a.activeLink, .Tabside li a:focus {
+    background: #ff9408;
+    color: #fff;
+    padding: 14px 30px 13px 30px;
+}

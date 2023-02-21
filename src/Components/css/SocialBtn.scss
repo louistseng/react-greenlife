@@ -1,0 +1,55 @@
+.socailBtn-wrapper {
+  display: flex;
+  align-items: center;
+}
+.kn-creator-btn-wrapper {
+  display: flex;
+  padding: 0 10px;
+  justify-content: space-evenly;
+  .container {
+    width: 0 !important;
+    margin: 0 !important;
+  }
+}
+.creator-wrapper {
+  display: flex;
+}
+.socialBtn-share-text {
+  color: #979595 !important;
+  font-size: calc(10px + 0.5vw);
+  margin-bottom: 0;
+  margin-right: 5px;
+  min-width: 40px;
+}
+.socailbtn-icon {
+  width: calc(30px + 0.6vw);
+  margin: 2px;
+  cursor: pointer;
+}
+.socailbtn-icon-mail {
+  width: calc(30px + 0.6vw);
+  margin: 5px 2px;
+  cursor: pointer;
+}
+.socailbtn-icon-printer .svg-inline--fa.fa-w-16 {
+  width: auto !important;
+  height: calc(30px + 0.6vw) !important;
+  margin: 2px;
+  cursor: pointer;
+  color: #4b4a4a !important;
+}
+.socailbtn-icon-printer {
+  width: auto;
+  margin: 2px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .kn-creator-btn-wrapper {
+    display: block;
+  }
+
+  .kn-creator-btn-wrapper .col-md-10 {
+    max-width: 61.333333%;
+  }
+}

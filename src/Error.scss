@@ -1,0 +1,38 @@
+.error-wrapper{
+    display:flex;
+    margin:0 auto;
+    max-width:1200px;
+
+    h1{
+        font-weight: 700;
+        font-style: normal;
+        font-size: calc(20px + 2vw);
+        color: #666666;
+    }
+    h2{
+        font-weight: 700;
+        color: #666666;
+        font-size: calc(8px + 1.5vw);
+    }
+    .right-content{
+        text-align:center;
+        width:60%;
+        margin-top:30px;
+        margin-left:calc(-12px - 1.5vw);
+    }
+    .man-wrapper{
+        width:30%;
+        margin-top:20px;
+        margin-right:calc(-12px - 1.5vw);
+    }
+    .man-img{
+        width:100%;
+    }
+    .logo-img{
+        width:80%;
+    }
+    .back-main-link{
+        text-decoration: underline;
+        color: #009966
+    }
+}

@@ -1,0 +1,19 @@
+.socailBtn-wrapper{
+    padding-left:15px;
+  }
+  .socailbtn-icon{
+    width:calc(35px + 1vw);
+    margin:2px;
+    cursor:pointer;
+  }
+  .socailbtn-icon-mail{
+    width:calc(35px + 1.2vw);
+    margin:5px 2px;
+    cursor:pointer;
+  }
+  .socailbtn-icon-printer{
+   
+    height:calc(35px + 1vw);
+    margin:2px;
+    cursor:pointer;
+  }

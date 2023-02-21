@@ -1,0 +1,845 @@
+//登入頁面
+.login-card {
+    // position: absolute;
+    display: block;
+    max-width: 450px;
+    width: 80%;
+    max-height: 720px;
+    margin: 3% auto;
+    background-color: rgba(255, 255, 255, 1);
+    box-sizing: border-box;
+    border: 1px solid rgb(155, 155, 155);
+    border-radius: 10px;
+    text-align: center;
+    left: 0;
+    right: 0;
+    font-family: "Microsoft JhengHei", sans-serif;
+    h6 {
+        font-size: calc(12px + 0.4vw);
+    }
+    .logo {
+        width: 65%;
+        margin: 3% auto;
+    }
+    .login-text {
+        color: #666666;
+        font-weight: 600;
+        font-size: calc(12px + 0.4vw);
+    }
+    .between-wrapper {
+        width: 65%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        .forget-pwd {
+            text-decoration: underline;
+            font-size: calc(12px + 0.4vw);
+        }
+    }
+    .normal-login {
+        width: 65%;
+        min-width: 180px;
+        border: 1px solid rgb(155, 155, 155);
+        border-radius: 6px;
+        margin: 2% auto;
+        padding: 3px 10px;
+        h3 {
+            color: #666666;
+            font-weight: 600;
+            margin: 3px auto;
+            font-size: calc(12px + 0.4vw);
+        }
+    }
+    .login-border {
+        border: 1px solid rgb(155, 155, 155);
+        border-radius: 6px;
+        width: 65%;
+        min-width: 180px;
+        margin: 3% auto;
+        padding: 0px 10px;
+    }
+    .waring-text {
+        color: #666666;
+        font-weight: 600;
+        font-size: calc(8px + 0.4vw);
+    }
+    .form-control::placeholder {
+        color: #c3c3c3;
+        font-weight: 600;
+    }
+    .form-control {
+        font-size: calc(10px + 0.4vw);
+        padding: 0;
+    }
+    .login-email,
+    .login-password {
+        border: none;
+    }
+    .login-submit {
+        border: none;
+        background: rgb(108, 177, 94);
+        color: white;
+        border-radius: 4px;
+        width: 65%;
+        min-width: 180px;
+        margin: 3% auto;
+        padding: 3px 10px;
+        h4 {
+            font-weight: 600;
+            margin: 3px auto;
+            font-size: calc(12px + 0.4vw);
+        }
+        &:hover {
+            filter: contrast(0.8);
+            cursor: pointer;
+        }
+    }
+    .login-outside-container {
+        margin: 0 auto;
+    }
+    .login-btn-wrapper {
+        width: 65%;
+        margin: 1% auto;
+        display: flex;
+        justify-content: space-around;
+        h6 {
+            font-weight: 500;
+            font-size: calc(10px + 0.4vw);
+            margin-top: 3px;
+            color: #666666;
+        }
+        .greenliving_login {
+            width: 50%;
+            min-width: 180px;
+            display: flex;
+            align-items: center;
+            background: white;
+            border-radius: 6px;
+            border: 1px solid #cccccc;
+            color: #666666;
+            font-weight: 600;
+            margin: 2px auto;
+            padding: 2px 4px;
+            img {
+                width: 15%;
+                margin-right: 5px;
+            }
+        }
+        .circle-btn {
+            height: calc(45px + 1vw);
+            width: calc(45px + 1vw);
+            border-radius: 50%;
+        }
+        .circle-btn-border {
+            height: calc(45px + 1vw);
+            width: calc(45px + 1vw);
+            border: 1px solid #b8bab9;
+            border-radius: 50%;
+            position: relative;
+            margin: 0 auto;
+            img {
+                clip-path: circle(calc(20px + 0.5vw) at center);
+                height: 85%;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                left: 0;
+                margin: auto;
+            }
+        }
+        .FB-login {
+            width: 50%;
+            display: flex;
+            align-items: center;
+            background: rgb(62, 100, 255);
+            border-radius: 6px;
+            color: white;
+            font-weight: 600;
+            margin: 2px;
+            padding: 2px 4px;
+            img {
+                width: 15%;
+                margin-right: 5px;
+            }
+        }
+        .GG-login {
+            width: 50%;
+            display: flex;
+            border-radius: 6px;
+            border: 1px solid rgb(204, 204, 204);
+            color: #666666;
+            margin: 2px;
+            padding: 4px;
+            img {
+                width: 18%;
+                margin-right: 5px;
+            }
+        }
+    }
+    .form-check-label {
+        font-size: 16px;
+    }
+    .remember-check {
+        // width:65%;
+        float: right;
+        padding-left: calc(14px + 1vw);
+    }
+    .back-link {
+        color: #666666;
+        width: 65%;
+        margin: 30px auto;
+        text-decoration: underline !important;
+    }
+}
+
+.login-card-wrapper {
+    width: 100%;
+    // height:70vh;
+}
+
+//註冊頁面
+.sightUp-card-wrapper {
+    // height:70vh;
+    .signUp-content {
+        // position: absolute;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
+    .logo {
+        width: calc(130px + 10vw);
+    }
+}
+
+.sightUp-card-wrapper-comp {
+    .logo {
+        width: calc(130px + 10vw);
+    }
+    .school-radio-wrapper {
+        display: flex;
+        width: 85%;
+        max-width: 800px;
+        margin: 20px auto 0px auto;
+        justify-content: flex-start;
+        padding: 1vw 1vw 0 1vw;
+        .radio-title {
+            text-align: start;
+            font-size: calc(12px + 0.6vw);
+            font-weight: 600;
+            color: #666666;
+        }
+        .radio-wrapper {
+            margin-left: 3vw;
+            label,
+            input {
+                color: #666666;
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+.signUp-btn-wrapper {
+    justify-content: center;
+    display: flex;
+    .note-text {
+        color: #666666;
+        width: 90%;
+        margin: 1vw auto;
+        font-size: calc(6px + 0.6vw);
+        // height:calc(10px + 1.7vw);
+        text-align: start;
+    }
+}
+
+.signUp-title {
+    padding: 20px 0 10px 0;
+    color: #666666;
+    font-size: calc(10px + 1vw);
+    font-weight: 600;
+}
+
+.signUp-subtitle {
+    padding: 0;
+    color: #666666;
+    font-size: calc(8px + 0.8vw);
+}
+
+.signUp-btn {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid rgb(204, 204, 204) !important;
+    border-radius: 10px;
+    width: 25vw;
+    height: 25vw;
+    max-width: 280px;
+    max-height: 280px;
+    margin: 1vw auto;
+    padding: 2vw;
+    img {
+        margin: 0 auto;
+    }
+    h4 {
+        color: #666666;
+        margin-top: calc(8px + 2vw);
+        font-size: calc(8px + 1vw);
+        font-weight: 600;
+    }
+}
+
+.width_50 {
+    min-width: 150px;
+    min-height: 150px;
+}
+
+@media screen and (max-width: 330px) {
+    .sightUp-card-wrapper {
+        height: auto;
+    }
+}
+
+//一般註冊
+.pbsightUp-title {
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+    img {
+        width: calc(16px + 1.1vw);
+        height: calc(16px + 1.1vw);
+    }
+    h2 {
+        font-size: calc(18px + 0.8vw);
+        color: #666666;
+        margin-left: 10px;
+        font-weight: 600;
+    }
+}
+
+.signUp-notice {
+    display: block;
+    margin: 0 auto;
+    background: rgb(233, 233, 233);
+    width: 85%;
+    padding: calc(8px + 1vw);
+    h5 {
+        color: #999999;
+        font-weight: 600;
+        font-size: calc(10px + 0.6vw);
+        margin-bottom: 0;
+    }
+}
+
+.signUp-addr-select {
+    margin-right: 5px;
+}
+
+.signUp-form-wrapper {
+    .signUp-form {
+        max-width: 900px;
+        width: 90%;
+        // position:absolute;
+        color: #666666;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        padding: 1vw;
+        .submit-btn-wrapper {
+            margin: 30px auto 20px auto;
+            text-align: center;
+        }
+        .org-subtitle {
+            text-align: start;
+            font-size: calc(12px + 0.6vw);
+            font-weight: 600;
+            margin: 30px 0 20px 0;
+        }
+        .input-wrapper-signUp {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            // margin:10px;
+            .city-select-withInput {
+                display: flex;
+                .city-select-wrapper {
+                    display: flex;
+                }
+            }
+        }
+        .example-text {
+            font-size: calc(8px + 0.4vw);
+            color: rgb(100, 100, 100);
+            margin-left: 14.4rem;
+            cursor: pointer;
+            white-space: nowrap;
+            .fa-question-circle {
+                color: rgb(100, 100, 100);
+                margin-right: 0.6rem;
+            }
+            .warning-text {
+                color: red;
+            }
+        }
+        .reminder-container {
+            width: calc(200px + 6vw);
+            // height: calc(170px + 6vw);
+            background: rgb(68, 68, 68);
+            color: rgb(230, 229, 227);
+            font-size: calc(8px + 0.4vw);
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            right: 20%;
+            border-radius: 0.9rem;
+            padding: 1.5rem;
+            opacity: 0.9;
+            // overflow: hidden;
+            z-index: 1;
+            .btn-close {
+                max-width: 15%;
+                width: 10%;
+                position: absolute;
+                top: -10px;
+                right: -10px;
+                // border: none;
+                border: 3px solid rgb(97, 97, 97);
+                border-radius: 50%;
+                outline: none;
+                font-weight: 600;
+                color: rgb(97, 97, 97);
+            }
+        }
+        .input-pbSignUp {
+            width: 70%;
+        }
+        .pbSignUp {
+            select {
+                width: auto;
+            }
+        }
+        // input[type="text"]:focus {
+        //     color: red;
+        // }
+        ::placeholder {
+            /* Firefox, Chrome, Opera */
+            opacity: 1;
+            /* Firefox */
+            font-size: calc(10px + 0.4vw);
+            font-weight: 600;
+        }
+        /* with the :focus here, we would show grey when not using the element */
+        select.changed {
+            color: black;
+        }
+        select {
+            color: #9e9e9e;
+            font-size: inherit;
+        }
+        /* with the :focus here, we show grey when using the element */
+        select:focus {
+            color: black;
+        }
+        option {
+            color: black;
+        }
+        option:first-of-type {
+            color: #9e9e9e;
+        }
+        input,
+        select {
+            line-height: calc(20px + 0.7vw);
+            border: none;
+            /* <-- This thing here */
+            border: solid 1px #c8c8c8;
+            border-radius: 4px;
+        }
+        option {
+            &:checked {
+                color: #aaaaaa;
+                opacity: 1;
+                /* Firefox */
+                font-size: calc(10px + 0.4vw);
+                font-weight: 600;
+            }
+        }
+        .verify-btn-input {
+            display: flex;
+            align-items: center;
+        }
+        .valid-num-input {
+            width: 30%;
+        }
+        .valid-num-input-comp {
+            width: 29%;
+        }
+        .required {
+            &::after {
+                content: "*";
+                color: red;
+                // font-size:calc(6px + .45vw);
+                font-weight: 500;
+            }
+        }
+        h3 {
+            width: 20%;
+            font-weight: 600;
+            text-align: start;
+            font-size: calc(10px + 0.7vw);
+            margin-bottom: 0;
+        }
+        .org_label {
+            width: 26% !important;
+        }
+        .gov-verify-title {
+            font-weight: 600 !important;
+            color: #333333;
+        }
+        .org-valid-title {
+            text-align: start;
+            font-size: calc(12px + 0.6vw);
+            font-weight: 600;
+            margin: 20px 0;
+            width: 26%;
+        }
+    }
+}
+
+.input-wrapper-signUp {
+    // padding:0 23%;
+    margin: 0.5vw;
+}
+
+.input-wrapper {
+    justify-content: flex-start;
+}
+
+.black-background {
+    display: none;
+    position: absolute;
+    overflow: hidden;
+    height: 130vh;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(20, 20, 31, 0.8);
+    z-index: 10;
+}
+
+.black-background.show {
+    display: block;
+    -webkit-animation: fadeInBackdrop 0.26s ease forwards;
+    animation: fadeInBackdrop 0.26s ease forwards;
+    animation-duration: 0.26s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+    animation-name: fadeInBackdrop;
+}
+
+.valid-number {
+    background: rgb(108, 177, 94);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-left: 5px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    h4 {
+        justify-content: center;
+        font-weight: 600;
+        margin: 0 auto;
+        padding: 2px calc(1px + 0.5vw);
+        font-size: calc(10px + 0.7vw);
+    }
+}
+
+.sigUp-submit {
+    background: rgb(108, 177, 94);
+    border: 2px solid rgb(108, 177, 94);
+    color: white;
+    font-weight: 600;
+    font-size: calc(10px + 0.7vw);
+    border-radius: 6px;
+    padding: 0px 25px;
+    text-align: center;
+    margin: 5px;
+}
+
+.sigUp-cancel {
+    background: white;
+    border: 2px solid rgba(153, 153, 153, 1);
+    border-radius: 5px;
+    color: #666666;
+    font-weight: 600;
+    font-size: calc(10px + 0.7vw);
+    padding: 0px 25px;
+    text-align: center;
+}
+
+.warning {
+    color: red;
+    width: 18%;
+    position: absolute;
+    right: 10%;
+    font-size: calc(4px + 0.6vw);
+}
+
+.forget-pwd-warning {
+    right: 0%;
+}
+
+@media screen and (max-width: 620px) {
+    .login-card {
+        .login-btn-wrapper {
+            // display: block;
+            .FB-login {
+                width: 100%;
+                justify-content: center;
+                height: 41px;
+                img {
+                    width: 33px;
+                    margin-right: 5px;
+                }
+            }
+            .GG-login {
+                width: 100%;
+                justify-content: center;
+                height: 41px;
+                img {
+                    width: 33px;
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+    .signUp-form-wrapper .signUp-form .example-text {
+        margin: 0 auto;
+    }
+}
+
+//組織選擇
+.org-type-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    .org-type-button {
+        background: #cccccc;
+        color: white;
+        width: calc(100px + 10vw);
+        height: calc(100px + 10vw);
+        margin: 10px 1vw;
+        padding: calc(10px + 0.5vw) calc(10px + 0.5vw) 0px calc(10px + 0.5vw);
+        border-radius: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:hover {
+            cursor: pointer;
+            background: #689a7d;
+            box-shadow: 5px 5px 5px #a7a7a7;
+            color: white;
+        }
+        .inner-wrapper {
+            text-align: center;
+            h2 {
+                font-weight: 600;
+                font-size: calc(12px + 0.8vw);
+                margin-bottom: 2px;
+            }
+            h5 {
+                font-size: calc(8px + 0.55vw);
+            }
+            .img-wrapper {
+                align-items: flex-end;
+                justify-content: center;
+                display: flex;
+                margin-bottom: 1.2vw;
+                img {
+                    width: calc(40px + 2vw);
+                }
+                .building {
+                    width: calc(30px + 1.5vw);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .org-type-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 20px auto;
+    }
+}
+
+//使用條款及隱私政策-Policy.js
+.policy-container {
+    margin: 10px auto;
+    .policy-top {
+        text-align: center;
+        .main-title {
+            color: #64904a;
+            font-weight: 600;
+            font-size: calc(14px + 1.2vw);
+            margin: 20px auto;
+        }
+        img {
+            width: 20vw;
+            max-width: 500px;
+            margin: 10px auto;
+        }
+        h6 {
+            font-size: calc(8px + 0.55vw);
+            color: #333333;
+        }
+    }
+    .policy-content {
+        .policy-title {
+            margin-top: 20px;
+            h2 {
+                font-weight: 600;
+                color: #666666;
+                font-size: calc(14px + 1vw);
+            }
+            h6 {
+                font-size: calc(8px + 0.55vw);
+                color: #333333;
+                padding: calc(4px + 0.5vw) calc(14px + 1vw);
+            }
+        }
+        .text-deco-underline {
+            text-decoration: underline;
+            font-weight: 600;
+        }
+    }
+    .policy-btn-wrapper {
+        display: flex;
+        justify-content: center;
+        margin: calc(14px + 1vw);
+        .agree-btn {
+            background-color: rgba(108, 177, 94, 1);
+            border: 1px solid rgba(108, 177, 94, 1);
+            border-radius: 5px;
+            color: white;
+            font-weight: 600;
+            margin: 5px;
+            padding: 3px 15px;
+            font-size: calc(8px + 0.6vw);
+            cursor: pointer;
+        }
+        .cancel-btn {
+            background: white;
+            border: 1px solid rgba(153, 153, 153, 1);
+            border-radius: 5px;
+            color: #666666;
+            font-weight: 600;
+            margin: 5px;
+            padding: 3px 15px;
+            font-size: calc(8px + 0.6vw);
+            cursor: pointer;
+        }
+    }
+}
+
+//組織-註冊
+.input-wrapper-signUp {
+    .org_label {
+        font-weight: 500 !important;
+        font-size: calc(8px + 0.6vw) !important;
+    }
+}
+
+@media screen and (max-width: 791px) {
+    .signUp-form-wrapper {
+        font-size: 1rem;
+        .signUp-form {
+            .required {
+                margin-top: 8px;
+            }
+            input {
+                float: left;
+                margin-bottom: 10px;
+                margin-top: 8px;
+                width: 100%;
+            }
+            .input-wrapper-signUp {
+                align-items: start;
+                .city-select-withInput {
+                    display: block;
+                    margin-top: 8px;
+                    .city-select-wrapper {
+                        margin-top: 10px;
+                    }
+                }
+                select {
+                    margin-bottom: 10px;
+                    margin-top: 8px;
+                }
+                .pbSignUp-sex {
+                    float: left;
+                    margin-right: 10px;
+                    input {
+                        width: auto;
+                    }
+                }
+                .valid-num-input {
+                    margin-top: 0;
+                }
+                .valid-number h4 {
+                    padding: 5px calc(1px + 0.5vw);
+                }
+            }
+        }
+    }
+    .sightUp-card-wrapper {
+        .signUp-content {
+            align-items: start;
+        }
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .signUp-form-wrapper {
+        .signUp-form {
+            width: 100%;
+            .org_label {
+                width: 100% !important;
+            }
+            .org-valid-title {
+                width: 100%;
+            }
+        }
+    }
+    .sigUp-submit,
+    .sigUp-cancel {
+        width: 45%;
+    }
+    .login-card {
+        .login-border,
+        .normal-login,
+        .between-wrapper,
+        .login-submit,
+        .login-btn-wrapper {
+            width: 80%;
+        }
+    }
+    .form-login {
+        height: auto;
+    }
+    .remember-check {
+        position: relative;
+    }
+}

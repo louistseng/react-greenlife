@@ -1,0 +1,695 @@
+.dailyGreen {
+    margin: 1vw auto;
+
+    .top-banner-daily {
+        height: 200px;
+        overflow: hidden;
+        position: relative;
+        background: url("../images1/dailyGreen/expert/bg_roadmap_01_sm.png");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        .roadMapBg {
+            width: 120%;
+        }
+        .text-area {
+            display: flex;
+            height: 100%;
+            align-items: center;
+            margin: 20px auto;
+        }
+        .daily-island {
+            width: 7%;
+        }
+        .top-banner-text {
+            width: 70%;
+            .daily-banner-green-text {
+                color: #519e28;
+                font-weight: 600;
+                font-size: calc(18px + 0.8vw);
+            }
+            h5 {
+                color: #666666;
+                font-size: calc(10px + 0.7vw);
+                font-weight: 600;
+            }
+        }
+    }
+    .pink-link {
+        color: #e46c7e;
+        text-decoration: underline;
+        font-size: calc(10px + 0.5vw);
+        &:hover {
+            filter: brightness(0.9);
+            text-decoration: underline;
+        }
+    }
+    .title-time-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        .update-time {
+            color: #a9a9a9;
+            font-size: calc(8px + 0.7vw);
+        }
+        .page-title {
+            color: #4c9f75;
+            font-weight: 600;
+            font-size: calc(14px + 1vw);
+        }
+    }
+    // 秀出我的綠＆綠生活網誌
+    .shareGreen_and_blog_wrapper {
+        background: #efefef;
+        padding: 20px;
+        .container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .gallery-wrapper {
+            width: 48%;
+            .title_and_link {
+                h2 {
+                    font-size: calc(18px + 0.8vw);
+                }
+            }
+            .radius-wrapper,
+            .radius-wrapper-bigger {
+                img {
+                    border-radius: 10px;
+                    object-fit: cover;
+                }
+            }
+            .radius-wrapper {
+                margin-left: 8px;
+                border-radius: 10px;
+
+                .my-card {
+                    position: relative;
+                    background: white;
+                    // width: calc(26px + 11vw);
+                    height: calc(26px + 11vw);
+                    max-height: 201px;
+                    margin-bottom: 8px;
+                }
+                .kn-rec-text {
+                    height: 20%;
+
+                    .rec-time {
+                        h3 {
+                            text-align: center;
+                            font-size: calc(12px + 0.4vw);
+                            font-weight: 600;
+                            color: #6cb15e !important;
+                            margin-bottom: 0;
+                        }
+                    }
+                    .kn-rec-title {
+                        color: #505250 !important;
+                        width: 95%;
+                        position: absolute;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        text-align: center;
+                        font-size: calc(12px + 0.4vw);
+                        font-weight: 600;
+                    }
+                }
+                .my-detail-img {
+                    border-radius: 0px;
+                    margin-bottom: 2px;
+                    height: 75%;
+                }
+                img {
+                    width: calc(26px + 11vw);
+                    width: 100%;
+
+                    max-width: 201px;
+                    // height: calc(86px + 7vw);
+                    height: calc(26px + 11vw);
+                    max-height: 201px;
+                    margin-bottom: 8px;
+                }
+            }
+            .radius-wrapper-bigger {
+                background: white;
+                img {
+                    width: calc(60px + 22vw);
+                    max-width: 410px;
+                    // height: calc(180px + 14vw);
+                    height: calc(60px + 22vw);
+                    max-height: 410px;
+                }
+
+                margin-left: 8px;
+                // border-radius: 10px;
+                max-height: 410px;
+                .my-card {
+                    position: relative;
+                    background: white;
+                    // width: calc(26px + 11vw);
+                    height: calc(26px + 11vw);
+                    max-height: 201px;
+                    margin-bottom: 8px;
+                }
+                .kn-rec-text {
+                    height: 20%;
+
+                    .rec-time {
+                        h6 {
+                            text-align: center;
+                            font-size: calc(12px + 0.4vw);
+                            font-weight: 600;
+                            color: #6cb15e !important;
+                            margin-bottom: 0;
+                        }
+                    }
+                    .kn-rec-title {
+                        color: #505250 !important;
+                        width: 95%;
+                        // position: absolute;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        text-align: center;
+                        font-size: calc(12px + 0.4vw);
+                        font-weight: 600;
+                        position: relative;
+                    }
+                }
+                .my-detail-img {
+                    border-radius: 0px;
+                    margin-bottom: 2px;
+                    height: 75%;
+                }
+            }
+            h4 {
+                color: #545454;
+                font-size: calc(12px + 0.8vw);
+            }
+            .gallery-img-wrapeer {
+                display: flex;
+                justify-content: center;
+            }
+            .title_and_link {
+                border-bottom: 2px solid rgb(214, 214, 214);
+                display: flex;
+                margin-bottom: 8px;
+                align-items: flex-end;
+                justify-content: space-between;
+                font-size: calc(12px + 0.8vw);
+            }
+        }
+    }
+    //綠生活公益榮譽榜
+    .green-charity-board {
+        .title_and_link {
+            margin-top: 20px;
+            color: #565656;
+        }
+        .daily-tree-section,
+        .daily-fish-section {
+            border-radius: 10px;
+            color: white;
+            padding: 5px 20px;
+            margin: 20px auto;
+            display: flex;
+            align-items: center;
+            .png-img {
+                width: 30%;
+                filter: brightness(1) invert(1);
+                margin: 0 auto;
+                display: block;
+            }
+            .animated-png1 {
+                width: 10%;
+                filter: brightness(1) invert(1);
+                position: absolute;
+                transform: translate(450%, -100%);
+                opacity: 0;
+            }
+            .animated-png2 {
+                width: 10%;
+                filter: brightness(1) invert(1);
+                position: absolute;
+                transform: translate(650%, -200%);
+                opacity: 0;
+            }
+            .left-charity-ammont {
+                border-right: 2px solid white;
+                width: 50%;
+                height: 80%;
+                position: relative;
+                .text-countup-wrapper {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    .countup-width {
+                        width: 130px;
+                    }
+                }
+                &:hover {
+                    .animated-png1 {
+                        animation: fishAnimation 1.5s linear infinite;
+                    }
+                    .animated-png2 {
+                        animation: fishAnimation2 1.5s linear infinite;
+                    }
+                }
+                h5 {
+                    font-size: calc(12px + 1vw);
+                }
+                h4 {
+                    text-align: center;
+                    margin-top: 15px;
+                    font-size: calc(12px + 1vw);
+                    span {
+                        margin: 0 16px;
+                        font-weight: 600;
+                        font-size: calc(16px + 1.6vw);
+                    }
+                }
+            }
+        }
+        .ranking-card-wrapper {
+            width: 50%;
+            .ranking-card {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 90%;
+                margin: 8px auto;
+                background: white;
+                border-radius: 8px;
+                padding: 4px 12px;
+                transition: 0.4 all;
+                &:hover {
+                    transform: translate(-2px, -2px);
+                }
+                .ranking-card-name {
+                    display: flex;
+                    align-items: center;
+                }
+                .clip-avatar-rank {
+                    clip-path: circle(calc(12px + 0.8vw) at center);
+                    height: calc(26px + 1.6vw);
+                    width: calc(26px + 1.6vw);
+                    margin: 0 1.2vw;
+                    border-radius: 50%;
+                    border: 1.5px solid grey;
+                }
+                h5 {
+                    font-size: calc(12px + 0.8vw);
+                    font-weight: 600;
+                    margin-bottom: 0;
+                }
+                .rank-board-name {
+                    color: green;
+                }
+                .rank-amount {
+                    color: #525252;
+                    margin-right: 1.2vw;
+                }
+                .crown {
+                    width: 25px;
+                }
+            }
+        }
+        .daily-tree-section {
+            background: #47a489;
+        }
+        .daily-fish-section {
+            background: #3a9ad5;
+        }
+    }
+    //綠生活達人榜
+    .green-expert-board {
+        h3 {
+            font-size: calc(12px + 0.8vw);
+        }
+        .drop-kn {
+            width: auto;
+            height: 35px;
+        }
+        .year-picker {
+            width: 60px;
+        }
+        .title_and_link {
+            margin-top: 20px;
+            color: #565656;
+        }
+        .pink-label {
+            color: #f18595;
+            font-size: calc(10px + 0.8vw);
+            font-weight: 600;
+        }
+        .year-section {
+            background: #2e6f6e;
+            width: calc(30% - 20px);
+            margin-right: 20px;
+        }
+        .total-section {
+            background: #419a98;
+            width: 70%;
+        }
+        .island-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            justify-content: space-evenly;
+            .island-card {
+                border-radius: 10px;
+                padding: 1.5vw;
+                width: 19%;
+                min-width: 140px;
+                max-width: 237px;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                margin: 5px;
+                &:hover {
+                    filter: brightness(1.16);
+                }
+                img {
+                    width: 85%;
+                    margin: 0 auto;
+                }
+                .total-percent {
+                    color: red;
+                    margin: 1.2vw auto;
+                }
+                h6 {
+                    font-size: calc(10px + 0.5vw);
+                }
+            }
+            .tourDaily-card {
+                background: #85c7d4;
+            }
+            .food-card {
+                background: #fad671;
+            }
+            .home-card {
+                background: #f1e0a1;
+            }
+            .shopping-card {
+                background: #e97b74;
+            }
+            .office-card {
+                background: #6dac9b;
+            }
+        }
+        .link-wrapper {
+            width: 100%;
+            .mybutton {
+                padding: 8px;
+                display: flex;
+                justify-content: flex-end;
+                cursor: pointer;
+                font-size: calc(10px + 0.5vw);
+            }
+        }
+    }
+    .green-expert-board {
+        background: #efefef;
+        padding: 20px;
+    }
+    .expert-section {
+        background: #52c4c2;
+        width: 100%;
+        margin: 10px auto;
+        display: flex;
+
+        h4 {
+            font-size: calc(10px + 0.8vw);
+        }
+        .data-wrapper {
+            display: flex;
+            align-items: center;
+            margin: 0 1vw;
+            p {
+                font-size: calc(12px + 0.7vw);
+                margin-bottom: 0;
+            }
+            span {
+                font-size: calc(10px + 0.7vw);
+            }
+        }
+    }
+    .brick {
+        color: white;
+        padding: calc(12px + 1vw) calc(10px + 0.8vw) !important;
+        text-align: center;
+    }
+    .green-friend-title-wrapper {
+        display: flex;
+        justify-content: flex-end;
+        height: 30px;
+        margin-bottom: 10px;
+        border-bottom: 1px solid grey;
+        .data-title {
+            font-size: calc(8px + 0.6vw);
+            color: rgb(102, 102, 102);
+            font-weight: 600;
+            margin-right: 4px;
+        }
+        .sort-type {
+            border: 1px solid grey;
+            padding: 2px;
+            &:hover {
+                cursor: pointer;
+            }
+            h3 {
+                font-size: calc(8px + 0.6vw);
+                color: #666666;
+                margin-bottom: 0;
+                font-weight: 600;
+            }
+        }
+        .sort-type.focus {
+            background: #009999;
+        }
+    }
+    // 綠生活紀錄榜
+    .green-friend-wrapper {
+        display: flex;
+        justify-content: center;
+
+        .two-card-wrapper {
+            display: flex;
+        }
+        .ranking-wrapper {
+            margin: 0.8vw;
+            min-width: calc(100px + 10vw);
+            .ranking-title {
+                text-align: center;
+                font-weight: 600;
+                font-size: calc(12px + 0.5vw);
+            }
+            .pointExpert-title {
+                color: #f3555f;
+            }
+            .followExpert-title {
+                color: #e23428;
+            }
+            .showExpert-title {
+                color: #ec8628;
+            }
+            .articleExpert-title {
+                color: #4cab68;
+            }
+            .ranking-top-card {
+                border-radius: 6px;
+                color: white;
+                padding: 10px;
+                transition: linear;
+                &:hover {
+                    .gold-crown {
+                        animation: crownDrop 0.4s linear 1;
+                    }
+                }
+                .rank_crown_and_headPic {
+                    .crown_headPic-wrapper {
+                        .crown-wrapper {
+                            width: 48px;
+                            margin: 0 auto;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: flex-end;
+                            img {
+                                margin: 0 auto;
+                            }
+                        }
+                    }
+                    .gold-crown {
+                        width: 22px;
+                        z-index: 1;
+                    }
+                    .clip-avatar-withCrown {
+                        clip-path: circle(24px at center);
+                        height: 48px;
+                        width: 48px;
+                        border-radius: 50%;
+                        background: white;
+                        margin: 0 auto;
+                    }
+                }
+            }
+            .ranking-name,
+            .ranking-number {
+                text-align: center;
+                font-size: calc(12px + 0.5vw);
+                font-weight: 600;
+            }
+            .pointExpert {
+                background: #f3555f;
+            }
+            .followExpert {
+                background: #e23428;
+            }
+            .showExpert {
+                background: #ec8628;
+            }
+            .articleExpert {
+                background: #4cab68;
+            }
+            .ranking-card {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                margin: 8px auto;
+                background: white;
+                border-radius: 8px;
+                border: 1px solid rgb(184, 184, 184);
+                padding: 4px;
+                transition: 0.4 all;
+                &:hover {
+                    transform: translate(-2px, -2px);
+                }
+                .ranking-card-name {
+                    display: flex;
+                    align-items: center;
+                    width: 170px;
+                }
+                .clip-avatar-rank {
+                    clip-path: circle(calc(12px + 0.8vw) at center);
+                    height: calc(26px + 1.6vw);
+                    width: calc(26px + 1.6vw);
+                    margin: 0 2px;
+                    border-radius: 50%;
+                    border: 1.5px solid grey;
+                }
+                h5 {
+                    font-size: calc(12px + 0.8vw);
+                    font-weight: 600;
+                    margin-bottom: 0;
+                }
+                .rank-board-name {
+                    color: green;
+                    max-width: 140px;
+                    font-size: calc(10px + 0.4vw);
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                }
+                .rank-amount {
+                    color: #525252;
+                    font-size: calc(10px + 0.7vw);
+                    margin-right: 2px;
+                }
+                .crown {
+                    width: 20px;
+                }
+            }
+        }
+    }
+}
+
+@keyframes fishAnimation {
+    from {
+        opacity: 0;
+        transform: translate(650%, -200%);
+    }
+    to {
+        opacity: 1;
+        transform: translate(300%, -300%);
+    }
+}
+
+@keyframes fishAnimation2 {
+    from {
+        opacity: 0;
+        transform: translate(450%, -100%);
+    }
+    to {
+        opacity: 1;
+        transform: translate(150%, -300%);
+    }
+}
+
+@keyframes crownDrop {
+    from {
+        transform: translateY(-50px) scale(2);
+    }
+    to {
+        transform: translateY(0px) scale(1);
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .dailyGreen {
+        .shareGreen_and_blog_wrapper {
+            .container {
+                display: block;
+            }
+            .gallery-wrapper {
+                margin: 0 auto;
+                width: 100%;
+                .radius-wrapper-bigger {
+                    img {
+                        width: 200px;
+                        height: 200px;
+                    }
+                }
+                .radius-wrapper {
+                    img {
+                        width: 96px;
+                        height: 96px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .dailyGreen {
+        .green-charity-board {
+            .daily-tree-section,
+            .daily-fish-section {
+                display: block;
+                .left-charity-ammont,
+                .ranking-card-wrapper {
+                    width: 100%;
+                }
+                .left-charity-ammont {
+                    border: none;
+                }
+            }
+        }
+        .green-friend-wrapper {
+            display: block;
+        }
+    }
+}
+
+@media screen and (max-width: 1192px) {
+    .dailyGreen {
+        .green-friend-wrapper {
+            .two-card-wrapper {
+                display: block;
+            }
+        }
+    }
+}

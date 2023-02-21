@@ -1,0 +1,356 @@
+/*服務類標章懶人包*/
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+
+#fordummiesWRAP {
+    font-family: 'Noto Sans TC', Microsoft JhengHei,\5FAE\8EDF\6B63\9ED1\9AD4, Helvetica, sans-serif;
+    -webkit-text-size-adjust: none;
+    width: 100%;
+    /*max-width: 1120px;*/
+    margin: 0 auto;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#fordummiesWRAP h1, h2, ol, ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+
+.fordummiesCOVER {
+    display: block;
+    width: 100%;
+    height: 295px;
+    background: #2ab999 url(../../images1/greenLiving/lazy-cover.png) bottom center no-repeat;
+    margin: 0;
+    padding: 20px 0px 0px 0px;
+}
+
+.fordummiesCOVER h1 {
+    color: #FFFFFF;
+    font-size: 51px;
+    line-height: 1.2;
+    text-align: center;
+    font-weight: 700;
+    display: block;
+}
+
+.fordummiesCOVER h1 span {
+    color: #fffe88;
+    font-weight: 900;
+    font-size: 60px;
+}
+
+.fordummiesQ1 {
+    display: block;
+    width: 100%;
+    min-height: 370px;
+    background: url(../../images1/greenLiving/lazy-Q1.png) no-repeat bottom left, linear-gradient(to bottom, #f0fced 10%,#e4ffd1 90%,#e4ffd1 90%);
+    margin: 0;
+}
+
+.fordummiesQ2 {
+    display: block;
+    width: 100%;
+    min-height: 370px;
+    background: url(../../images1/greenLiving/lazy-Q2.png) no-repeat bottom right, linear-gradient(to bottom, #f0fced 10%,#daf7f5 90%,#daf7f5 90%);
+    margin: 0;
+}
+
+.fordummiesQ3 {
+    display: block;
+    width: 100%;
+    min-height: 370px;
+    background: url(../../images1/greenLiving/lazy-Q3.png) no-repeat bottom left, linear-gradient(to bottom, #f0fced 10%,#f0edf7 90%,#f0edf7 90%);
+    margin: 0;
+}
+
+.fordummiesQ4 {
+    display: block;
+    width: 100%;
+    min-height: 370px;
+    background: url(../../images1/greenLiving/lazy-Q4.png) no-repeat bottom right, linear-gradient(to bottom, #f0fced 10%,#cdfbd5 90%,#cdfbd5 90%);
+    margin: 0;
+}
+
+.fordummiesQ1 h2 {
+    color: #63b727;
+    text-align: center;
+    font-size: 51px;
+    display: block;
+    font-weight: 700;
+    padding-top: 30px;
+}
+
+.fordummiesQ2 h1 {
+    color: #0cbaaf;
+    text-align: center;
+    font-size: 51px;
+    display: block;
+    font-weight: 700;
+    padding-top: 30px;
+}
+
+.fordummiesQ3 h2 {
+    color: #8e7ad0;
+    text-align: center;
+    font-size: 51px;
+    display: block;
+    font-weight: 700;
+    padding-top: 30px;
+    text-shadow: 0 0 0.2em #fcfcfc;
+}
+
+.fordummiesQ4 h2 {
+    color: #1bb85e;
+    text-align: center;
+    font-size: 51px;
+    display: block;
+    font-weight: 700;
+    padding-top: 30px;
+}
+
+.fordummiesQ1 ul {
+    width: 720px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    flex-wrap: wrap;
+}
+
+.fordummiesQ3 ul {
+    width: 720px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    flex-wrap: wrap;
+}
+
+.fordummiesQ4 ul {
+    width: 720px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    flex-wrap: wrap;
+}
+
+.btnA1 a {
+    background-color: #63b727;
+    width: 210px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    border-radius: 30px;
+    border: #FFFFFF 4px solid;
+    color: #FFF;
+    font-size: 26px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.btnA3 a {
+    background-color: #8e7ad0;
+    width: 210px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    border-radius: 30px;
+    border: #FFFFFF 4px solid;
+    color: #FFF;
+    font-size: 26px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.btnA4 a {
+    background-color: #1bb85e;
+    width: 210px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    border-radius: 30px;
+    border: #FFFFFF 4px solid;
+    color: #FFF;
+    font-size: 26px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.btnA1 a:hover {
+    background-color: #9ad66f;
+}
+
+.btnA3 a:hover {
+    background-color: #b7aae3;
+}
+
+.btnA4 a:hover {
+    background-color: #62df97;
+}
+
+.fordummiesQ2 ul {
+    width: 720px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    flex-wrap: wrap;
+}
+
+.fordummiesQ2 li a {
+    width: 160px;
+    height: 160px;
+    display: block;
+    text-align: center;
+    border-radius: 999em;
+    border: #FFFFFF 4px solid;
+    color: #FFF;
+    font-size: 26px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.fordummiesQ2 li a:hover {
+    background-color: #60ece3;
+}
+
+.fordummiesQ2 li a span {
+    display: block;
+    margin-top: 94px;
+}
+
+.btnA2a a {
+    background: #0cbaaf url(../../images1/greenLiving/btn2a.png) center top no-repeat;
+}
+
+.btnA2b a {
+    background: #0cbaaf url(../../images1/greenLiving/btn2b.png) center top no-repeat;
+}
+
+.btnA2c a {
+    background: #0cbaaf url(../../images1/greenLiving/btn2c.png) center top no-repeat;
+}
+
+.btnA2d a {
+    background: #0cbaaf url(../../images1/greenLiving/btn2d.png) center top no-repeat;
+}
+
+img{
+    /*max-width: 1000px;*/
+}
+
+.block {
+    line-height: normal;
+    font-family: 'Noto Sans TC', Microsoft JhengHei,\5FAE\8EDF\6B63\9ED1\9AD4, Helvetica, sans-serif;
+    font-size: 1em;
+    color: currentColor;
+}
+
+/* --手機版型------------------------------------- */
+@media screen and (max-width: 1024px) {
+    .fordummiesQ1 ul {
+        width: 250px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+        flex-wrap: wrap;
+        padding-bottom: 40px;
+    }
+
+    .fordummiesQ1 li {
+        padding-bottom: 20px;
+    }
+
+    .fordummiesQ3 ul {
+        width: 250px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+        flex-wrap: wrap;
+        padding-bottom: 40px;
+    }
+
+    .fordummiesQ3 li {
+        padding-bottom: 20px;
+    }
+
+    .fordummiesQ4 ul {
+        width: 250px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+        flex-wrap: wrap;
+        padding-bottom: 40px;
+    }
+
+    .fordummiesQ4 li {
+        padding-bottom: 20px;
+    }
+
+    .fordummiesQ2 ul {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+        flex-wrap: wrap;
+        padding-bottom: 40px;
+    }
+
+    .fordummiesQ2 li a {
+        width: 152px;
+        height: 152px;
+        display: block;
+        text-align: center;
+        border-radius: 999em;
+        border: #FFFFFF 4px solid;
+        color: #FFF;
+        font-size: 26px;
+        font-weight: 400;
+        text-decoration: none;
+    }
+
+    .fordummiesQ2 li {
+        padding: 6px;
+    }
+
+    .fordummiesQ2 li a span {
+        display: block;
+        margin-top: 90px;
+    }
+
+    .block .fordummiesQ2 h2{
+        display: none;
+    }
+}
+
+@media(min-width: 768px){
+    .block .head h2{
+        font-size: 26px;
+    }
+}
+
+@media(max-width: 1000px){
+    img{
+        width: 100%;
+    }
+}

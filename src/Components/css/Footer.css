@@ -1,0 +1,145 @@
+/*footer*/
+
+/* .footer-ab{
+      position:absolute;
+      width:100%;
+      height:240px;
+  } */
+
+.row {
+  padding: 0 !important;
+}
+
+/*---- Footer 用到的css----*/
+
+.site-footer {
+  line-height: 30px;
+  font-size: calc(8px + 0.8vw);
+  background-color: #3c3c3c;
+  color: white;
+  padding: 20px 0px 0px 0px;
+  overflow-x: hidden;
+}
+
+.site-footer .link-with-border{
+  color: #fff4e0;
+  padding: 3px 10px;
+  margin: 20px 5px 0 0;
+}
+
+.site-footer .link-with-border {
+  border: 1px solid #fff4e0;
+  border-radius: 15px;
+}
+
+.form-link {
+  margin-bottom: calc(3px + 0.6vw);
+}
+
+.footer-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.site-footer span {
+  margin: 10px 0;
+  display: block;
+  line-height: 25px;
+}
+
+.social-icons {
+  margin: 0 0.5vw;
+}
+
+.social-icons:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+  box-shadow: 0 0 1px 1px yellow;
+  border-radius: 50%;
+}
+
+.footer-icons-wrapper {
+  margin-top: 5%;
+}
+
+.footer-icons-wrapper,
+.type-icons-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.type-icons-wrapper {
+  margin: 0 1vw 0 0;
+}
+
+p.footer-icons-label {
+  margin-bottom: 0;
+}
+
+.footer-social-icon {
+  width: calc(30px + 1.5vw);
+}
+
+ul.social {
+  text-align: right;
+}
+
+ul.social li {
+  display: inline-block;
+}
+
+ul.social li a {
+  width: 120px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  background-color: #434343;
+  display: inline-block;
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 14px;
+  margin-top: 16px;
+}
+
+ul.social li a:hover {
+  background-color: #ffffff;
+  color: #46adca;
+  text-decoration: none;
+}
+
+.style-two {
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.style-three {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0)
+  );
+}
+
+.footer-text-site {
+  letter-spacing: 1px;
+  text-align: start !important;
+}
+.call-line {
+  color: #f3aa27;
+  text-decoration: underline !important;
+  font-weight: 900;
+}
+.call-line:hover {
+  color: #f4c05f;
+}
+
+@media screen and (max-width: 1091px) {
+  .footer-wrapper {
+    flex-direction: column-reverse;
+  }
+}

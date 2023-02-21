@@ -1,0 +1,230 @@
+.SelectService {
+    /* margin-top: 50px; */
+    width: 100%;
+    margin: auto;
+    min-height: 677px;
+    /* background: url(../img/bg.jpg) bottom center no-repeat; */
+    padding-bottom: 200px;
+    background-size: contain;
+}
+
+.SelectService .logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.SelectService .logo img {
+    width: 350px;
+    margin: 0;
+    margin: 20px auto;
+}
+
+.SelectService .optservice {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 20px auto;
+    color: #666;
+}
+
+.SelectService .width1028 {
+    width: 1028px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.SelectService .width1028 a:hover {
+    text-decoration: none;
+}
+
+.SelectService .green_web_border {
+    width: calc(50% - 30px);
+    margin: 10px;
+}
+
+.SelectService .width1028 a.green_web ,
+.SelectService .width1028 .green_web5{
+    min-height: 161px;
+    max-height: 161px;
+}
+
+
+.SelectService .width1028 a.green_web,
+.SelectService .width1028 .green_web3,
+.SelectService .width1028 .green_web5 {
+    font-weight: bold;
+    font-size: 2rem;
+    width: 100%;
+    margin: 10px;
+    border: 0.5px solid grey;
+    color: grey;
+    border-radius: 10px;
+    padding: 25px 0 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    transition: all 0.3s;
+    position: relative;
+    object-fit: cover;
+}
+.SelectService .width1028 .green_web5 h2 {
+    font-size: 1.625rem;
+    font-weight: 600;
+}
+.SelectService .width1028 .green_web5 a{
+    width: 50%;
+    border: none;
+    color: #666;
+    text-align: center;
+}
+.SelectService .width1028 .green_web5 img{
+    /* width: 100px;
+    height: 100px; */
+}
+.SelectService .width1028 .green_web5 a:hover{
+    color: #6cb15e;
+}
+
+
+.SelectService .width1028 .green_web4 {
+    border: none;
+    color: #666;
+}
+
+.SelectService .width1028 .green_web4:hover {
+    background: transparent;
+    color: #6cb15e;
+}
+
+.SelectService .width1028 .green_web:hover {
+    background: #6cb15e;
+    transition: all 0.3s;
+    color: #fff;
+}
+
+.SelectService .width1028 a img {
+    width: 86px;
+    margin-right: 10px;
+}
+
+.SelectService .width1028 .green_web3 img {
+    height: 70px;
+}
+
+.SelectService .width1028 a .green_web2 {
+    color: #009966;
+}
+
+.SelectService .width1028 a:hover .green_web2 {
+    color: #fff;
+}
+
+.SelectService .width1028 .green_web3 {
+    font-size: 1.625rem;
+    color: grey;
+    max-height: 161px;
+}
+
+.SelectService hr.Spin {
+    background-color: #ccc;
+    border-top: none;
+    height: 80px;
+    width: 0.5px;
+    margin: 0 15px;
+}
+
+.SelectService .icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 180px;
+}
+
+.SelectService .icon.blue {
+    color: #02a7f0;
+}
+
+.SelectService .icon.green {
+    color: #00bfbf;
+}
+
+.SelectService .icon.green2 {
+    color: #4b7902;
+}
+
+.SelectService .green3 {
+    display: flex;
+    flex-direction: row;
+}
+
+.account {
+    position: absolute;
+    font-size: 1.25rem;
+    right: 25px;
+    bottom: 10px;
+}
+
+@media screen and (max-width: 1028px) {
+    .SelectService .width1028 {
+        width: 100%;
+    }
+    .account {
+        bottom: 0;
+    }
+}
+
+@media screen and (max-width: 1006px) {
+    .SelectService .green_web_border {
+        width: calc(100% - 40px);
+        margin: 0 10px 0 10px;
+    }
+    .SelectService .width1028 a.green_web,
+    .SelectService .width1028 .green_web3 {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    .SelectService .icon {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 537px) {
+    .account {
+        bottom: 0px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .SelectService .width1028 a.green_web,
+    .SelectService .width1028 .green_web3,
+    .SelectService .width1028 .green_web5 {
+        flex-direction: column;
+        max-height: none;
+    }
+    .SelectService .green3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .account {
+        position: relative;
+        text-align: center;
+        right: unset;
+    }
+    .SelectService hr.Spin {
+        height: 0.5px;
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .SelectService .logo img {
+        width: 80%;
+    }
+}

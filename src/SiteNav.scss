@@ -1,0 +1,64 @@
+.site-nav {
+    div {
+        margin: 0.2vw;
+        line-height: 20px;
+    }
+    img {
+        margin: 8px 0 0 8px;
+        width: calc(16px + 1.8vw);
+        height: calc(16px + 1.8vw);
+    }
+    .site-main-title {
+        display: flex;
+        justify-content: flex-start;
+        border-bottom: 3px solid rgba(108, 177, 94, 1);
+        width: 100%;
+
+        h1 {
+            color: rgb(75, 74, 74);
+            font-weight: 600;
+            font-size: calc(16px + 1vw);
+        }
+    }
+    .site-sub-title {
+        width: 100%;
+        border-bottom: 2px solid rgb(216, 215, 215);
+
+        h2 {
+            font-weight: 600;
+            font-size: calc(16px + 1vw);
+        }
+        li {
+            font-size: calc(14px + 0.5vw);
+            line-height: 30px;
+            color: rgb(75, 74, 74);
+            cursor: pointer;
+            list-style-type: none;
+        }
+
+        li:hover {
+            font-size: calc(14px + 0.5vw);
+            line-height: 30px;
+            color: grey;
+            transform: translateY(-2px);
+        }
+    }
+
+    .navigator-content {
+        margin-left: 5%;
+        p {
+            color: rgb(75, 74, 74);
+            font-size: calc(14px + 0.5vw);
+        }
+    }
+}
+.siteNav-content {
+    margin: 2vw !important;
+}
+.title-link {
+    width: 100%;
+    &:hover {
+        filter: brightness(0.9);
+        transform: translateY(-2px);
+    }
+}

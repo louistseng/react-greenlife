@@ -1,0 +1,297 @@
+.topImgCollection {
+    display: flex;
+    height: calc(200px + 16vw);
+    overflow: hidden;
+
+    .img-area {
+        padding: 0;
+        .customize-layer {
+            padding: 0;
+        }
+        .img-text-wrapper-half {
+            .inboxForTopImg {
+                height: calc(100px + 8vw);
+            }
+            &:hover {
+                .inboxForTopImgMask {
+                    background: rgba(0, 0, 0, 0);
+                }
+            }
+        }
+        .img-text-wrapper {
+            padding: 0;
+            &:hover {
+                .inboxForTopImgMask {
+                    background: rgba(0, 0, 0, 0);
+                }
+            }
+        }
+        .first-layer {
+            display: flex;
+            .inboxForTopImg {
+                height: calc(120px + 9.5vw);
+            }
+        }
+        .second-layer {
+            display: flex;
+            .inboxForTopImg {
+                height: calc(80px + 6.5vw);
+            }
+        }
+    }
+    .oneLayer {
+        margin: 0;
+        .inboxForTopImg {
+            height: calc(200px + 16vw);
+        }
+    }
+    .leftBlue {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        &:after {
+            content: "";
+            width: 0;
+            height: 0;
+            border-top: 0px solid transparent;
+            border-bottom: calc(200px + 17vw) solid transparent;
+            border-left: calc(35px + 5vw) solid #67c3be;
+            position: absolute;
+            transform: translate(24vw, 0%);
+            z-index: 10;
+        }
+        .title-wrapper {
+            h1 {
+                color: white;
+                font-weight: 600;
+                font-size: calc(16px + 2vw);
+            }
+            .number {
+                display: inline-block;
+                color: white;
+                font-weight: 600;
+                line-height: 50px;
+                border-bottom: 3px solid white;
+                font-size: calc(16px + 2vw);
+            }
+        }
+    }
+    .energy {
+        background: #67c3be;
+    }
+    .reduce {
+        background: #8dcdbf;
+        &:after {
+            border-left-color: #8dcdbf;
+        }
+    }
+    .shop {
+        background: #67c3be;
+        &:after {
+            border-left-color: #67c3be;
+        }
+    }
+    .environment {
+        background: #add6a5;
+        &:after {
+            border-left-color: #add6a5;
+        }
+    }
+    .promote {
+        background: #99cc66;
+        &:after {
+            border-left-color: #99cc66;
+        }
+    }
+}
+
+@media screen and (min-width: 1900px) {
+    .topImgCollection {
+        .leftBlue {
+            &:after {
+                transform: translateX(460px);
+            }
+        }
+    }
+}
+
+.inboxForTopImg {
+    position: relative;
+    width: 100%;
+
+    overflow: hidden;
+    object-position: 50% 50%;
+    img {
+        object-fit: cover;
+        object-position: center;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.inboxForTopImgMask {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    transition: 0.3s;
+    z-index: 1;
+    h2,
+    h4 {
+        color: white;
+        font-weight: 600;
+        position: absolute;
+        bottom: 5px;
+        right: 1vw;
+        font-size: calc(10px + 1vw);
+    }
+}
+
+.item-section {
+    background: rgba(247, 247, 247, 1);
+    margin: 25px 0;
+    h3 {
+        font-weight: 600;
+        font-size: calc(16px + 0.8vw);
+    }
+    .content-top-wrapper {
+        display: flex;
+        align-items: center;
+        position: relative;
+        background: rgba(102, 102, 102, 0.4);
+        img {
+            padding: 0;
+        }
+        .title-text {
+            color: white;
+            margin-left: 2vw;
+            padding: 5px;
+            h2 {
+                display: inline-block;
+                border-bottom: 2px solid white;
+                padding-bottom: 5px;
+                font-weight: 700;
+                font-size: calc(12px + 2vw);
+            }
+            h3 {
+                font-weight: 600;
+                font-size: calc(10px + 1vw);
+            }
+        }
+    }
+    .bottom-content {
+        padding: 30px 0;
+
+        .inner-title-wrapper {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            margin-bottom: 10px;
+            .energy {
+                h3 {
+                    display: inline-block;
+                    border-bottom: 2.5px solid #317105;
+                }
+            }
+
+            .water {
+                h3 {
+                    display: inline-block;
+                    border-bottom: 2.5px solid #8595ce;
+                }
+            }
+            .paper {
+                h3 {
+                    display: inline-block;
+                    border-bottom: 2.5px solid #f5985a;
+                }
+            }
+            .oil {
+                h3 {
+                    display: inline-block;
+                    border-bottom: 2.5px solid #49d0d4;
+                }
+            }
+            .meeting {
+                h3 {
+                    display: inline-block;
+                    border-bottom: 2.5px solid #c6c841;
+                }
+            }
+        }
+        .inner-content-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .cate-title-energy {
+                color: #317105;
+                font-weight: 600;
+            }
+            .cate-title-water {
+                color: #8595ce;
+                font-weight: 600;
+            }
+            .cate-title-paper {
+                color: #f5985a;
+                font-weight: 600;
+            }
+            .cate-title-oil {
+                color: #49d0d4;
+                font-weight: 600;
+            }
+            .cate-title-meeting {
+                color: #c6c841;
+                font-weight: 600;
+            }
+            h3 {
+                text-align: center;
+            }
+            .right-text-wrapper {
+                p {
+                    font-size: calc(12px + 0.4vw);
+                    margin-bottom: 0;
+                    padding: 10px;
+                    border-bottom: 2px solid rgb(218, 218, 218);
+                }
+                .last-list-energy {
+                    border-bottom: 2.5px solid #317105;
+                }
+                .last-list-water {
+                    border-bottom: 2.5px solid #8595ce;
+                }
+                .last-list-paper {
+                    border-bottom: 2.5px solid #f5985a;
+                }
+                .last-list-oil {
+                    border-bottom: 2.5px solid #49d0d4;
+                }
+                .last-list-meeting {
+                    border-bottom: 2.5px solid #c6c841;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 468px) {
+    .item-section {
+        .content-top-wrapper {
+            .title-text {
+                margin-left: 0;
+            }
+        }
+    }
+    .item-section {
+        .bottom-content {
+            .inner-content-wrapper {
+                .cate-title-energy {
+                    padding: 0;
+                }
+                .right-text-wrapper {
+                    padding: 0;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,442 @@
+%btn-shared {
+    border-radius: 6px;
+    padding: 3px 8px;
+    font-size: calc(10px + 0.6vw);
+    font-weight: 600;
+    width: 180px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    &:hover {
+        transform: translate(1px, 1px);
+        filter: brightness(1.1);
+    }
+}
+
+.with_animation {
+    img {
+        animation: jumping 2s linear;
+        width: auto !important;
+        // transform: translate(-50%, -0%);
+    }
+}
+
+.comfirm-title-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .comfirm-title {
+        margin-bottom: 0;
+    }
+}
+
+.greenliving_green {
+    color: green;
+    font-size: calc(14px + 0.7vw);
+}
+
+.city_colored {
+    color: rgb(255, 81, 0);
+}
+
+@keyframes jumping {
+    0% {
+        transform: translate(0%, 0%);
+    }
+    10% {
+        transform: translate(-180%, -0%);
+    }
+    25% {
+        transform: translate(-150%, -80%);
+    }
+    35% {
+        transform: translate(-100%, -20%);
+    }
+    45% {
+        transform: translate(-70%, -50%);
+    }
+    50% {
+        transform: translate(-50%, -30%);
+    }
+    65% {
+        transform: translate(-0%, -0%) rotate(15deg);
+    }
+    70% {
+        transform: translate(-0%, -0%) rotate(-15deg);
+    }
+    75% {
+        transform: translate(-0%, -0%) rotate(15deg);
+    }
+    80% {
+        transform: translate(-0%, -0%) rotate(-15deg);
+    }
+    100% {
+        transform: translate(-0%, -0%);
+    }
+}
+
+.main-Alert {
+    animation: shaking 0.4s linear;
+}
+
+@keyframes shaking {
+    0% {
+        transform: translate(1px, 1px);
+    }
+    20% {
+        transform: translate(-3px, 0px);
+    }
+    40% {
+        transform: translate(1px, -1px);
+    }
+    60% {
+        transform: translate(-3px, 1px);
+    }
+    80% {
+        transform: translate(-1px, -1px);
+    }
+    100% {
+        transform: translate(1px, -2px);
+    }
+}
+
+body.react-confirm-alert-body-element {
+    overflow: hidden;
+}
+
+.react-confirm-alert-blur {
+    filter: url(#gaussian-blur);
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+}
+
+.react-confirm-alert-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    background: rgba(255, 255, 255, 0.9);
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
+    opacity: 0;
+    -webkit-animation: react-confirm-alert-fadeIn 0.5s 0.2s forwards;
+    -moz-animation: react-confirm-alert-fadeIn 0.5s 0.2s forwards;
+    -o-animation: react-confirm-alert-fadeIn 0.5s 0.2s forwards;
+    animation: react-confirm-alert-fadeIn 0.5s 0.2s forwards;
+}
+
+.cancel-btn-forMain {
+    color: #8a8888;
+    background: #fff;
+    border: 2px solid #8a8888;
+    @extend %btn-shared;
+}
+
+.comfirm-btn-forMain {
+    color: white;
+    background: #6cb15e;
+    border: 2px solid #6cb15e;
+    &:hover {
+        color: white;
+    }
+    @extend %btn-shared;
+}
+
+.alertTitle_forMain {
+    letter-spacing: 0.05em;
+    font-size: calc(10px + 0.6vw) !important;
+    h2 {
+        font-size: calc(10px + 0.6vw) !important;
+    }
+}
+
+.react-confirm-alert-body {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 405px;
+    padding: 1.2vw;
+    text-align: left;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 20px 75px rgba(0, 0, 0, 0.13);
+    color: #666;
+    position: relative;
+    .comfirmAlert_text_btn_wrapper {
+        display: flex;
+        h3,
+        .greenliving_login_comfirmAlert {
+            margin-bottom: 0;
+        }
+    }
+    .close-icon {
+        position: absolute;
+        right: -10px;
+        top: -10px;
+        cursor: pointer;
+        .svg-inline--fa {
+            width: 30px;
+            height: 30px;
+        }
+    }
+    .img-title-wrapper {
+        display: flex;
+        align-items: center;
+    }
+    .comfirmAlert-subTitle {
+        color: #bd1e1e;
+    }
+    p {
+        text-align: center;
+        font-size: calc(10px + 0.5vw);
+        margin-bottom: 0;
+    }
+    .org-comfirmAlert-note {
+        background: #e7e7e7;
+        padding: 0.8rem;
+        display: flex;
+        h4 {
+            font-size: calc(10px + 0.5vw);
+            color: #bd1e1e;
+            font-weight: 600;
+            flex-wrap: nowrap;
+        }
+        .note-btn-wrapper {
+            display: flex;
+            .alert-btn-wrapper {
+                display: flex;
+                align-items: center;
+                h5 {
+                    font-size: calc(10px + 0.4vw);
+                    margin-bottom: 0;
+                }
+            }
+            .comfirm-btn {
+                color: #8a8888;
+                background: #fff;
+                border: 2px solid #8a8888;
+                border-radius: 6px;
+                padding: 3px;
+                font-size: calc(10px + 0.4vw);
+                font-weight: 600;
+                width: 130px;
+                margin-bottom: 0.5rem;
+            }
+        }
+    }
+}
+
+.greenliving_login_comfirmAlert {
+    width: 165px;
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 6px;
+    border: 1px solid #cccccc;
+    color: #666666;
+    font-weight: 600;
+    margin: 2px;
+    padding: 2px 4px;
+    margin-bottom: 0.5rem;
+    h6 {
+        margin-bottom: 0;
+        font-size: calc(10px + 0.4vw);
+    }
+    img {
+        width: 12%;
+        margin-right: 5px;
+    }
+}
+
+.react-confirm-alert-body {
+    h2,
+    h3 {
+        padding: 8px;
+        text-align: justify;
+    }
+    h2 {
+        font-size: calc(18px + 0.7vw);
+    }
+    h3 {
+        font-size: calc(14px + 0.6vw);
+        font-weight: 450 !important;
+    }
+}
+
+.main-overlay {
+    background: rgba(68, 68, 68, 0.2);
+}
+
+.react-confirm-alert-button-group {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 20px;
+}
+
+.react-confirm-alert-button-group {
+    display: flex;
+    justify-content: space-around;
+    .comfirm-btn {
+        color: #8a8888;
+        background: #fff;
+        border: 2px solid #8a8888;
+        border-radius: 6px;
+        padding: 3px 8px;
+        font-size: calc(10px + 0.6vw);
+        font-weight: 600;
+        width: 170px;
+    }
+    .goLogin-btn {
+        background: #6cb15e;
+        color: #fff;
+        border: 2px solid #6cb15e;
+        border-radius: 6px;
+        // margin:2px;
+        padding: 3px 8px;
+        font-size: calc(10px + 0.6vw);
+        font-weight: 600;
+        width: 170px;
+        // min-width: 60px;
+        text-align: center;
+    }
+}
+
+@-webkit-keyframes react-confirm-alert-fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes react-confirm-alert-fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes react-confirm-alert-fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes react-confirm-alert-fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.alert-wrapper {
+    margin: 45vh auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 11;
+    width: 70vw;
+    height: 150px;
+    max-width: 400px;
+    h4 {
+        font-size: calc(20px + 0.5vw);
+    }
+}
+
+@media screen and (max-width: 543px) {
+    .react-confirm-alert-body {
+        width: 90% !important;
+        margin: 0 auto;
+        padding: 20px 1.2vw !important;
+        .alert-content-wrapper {
+            margin: 0 auto;
+        }
+        img {
+            // width: auto;
+            margin-right: 5px;
+        }
+        .rwd-width {
+            width: 12% !important;
+        }
+        .note-btn-wrapper {
+            display: block !important;
+            .alert-btn-wrapper {
+                display: flex !important;
+                align-items: center;
+            }
+            .comfirm-btn {
+                min-width: 180px !important;
+            }
+            .greenliving_login {
+                min-width: 180px;
+                img {
+                    width: 8% !important;
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+    .react-confirm-alert-button-group {
+        .comfirm-btn {
+            width: 45%;
+        }
+        .goLogin-btn {
+            width: 45%;
+        }
+    }
+}
+
+.getPoint-wrapper {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .getPoint-tooltip {
+        opacity: 0;
+        z-index: 1;
+        font-size: calc(12px + 1vw);
+        position: absolute;
+        color: white;
+        background: rgba(166, 218, 166, 0.856);
+        padding: 4px;
+        border-radius: 6px;
+        box-shadow: 3px 3px 4px rgb(165, 164, 164);
+        animation: fading 3s linear;
+    }
+}
+
+@keyframes fading {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 1;
+    }
+    85% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}

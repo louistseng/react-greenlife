@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <!--http測試機臨時hotfix-->
+  <!-- <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+   -->
+  <title>全民綠生活資訊平台</title>
+  <meta name="description" data-react-helmet="true"
+    content="行政院環境保護署-全民綠生活資訊平台首頁，「綠生活」是一種親環境的生活方式，從食、衣、住、行、育、樂、購等生活小細節做起，來愛護我們的家園。" />
+  <meta name="DC.Title" content="行政院環境保護署全民綠生活資訊平台" />
+  <meta name="DC.Contributor" content="行政院環境保護署" />
+  <meta name="DC.Contributor" content="行政院環境保護署" />
+  <meta name="DC.Subject" content="全民綠生活資訊平台" />
+  <meta name="DC.Coverage" content="Global" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0,user-scalable=0" />
+  <meta name="theme-color" content="#000000" />
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-L49X8Z5PVK"></script>
+
+  <!-- <script> 
+    if (self == top) { 
+        document.documentElement.style.display = 'block';
+     } else { top.location = self.location;
+      }
+      try{
+        top.location.hostname;
+        if (top.location.hostname != window.location.hostname) {
+        top.location.href =window.location.href;
+        }
+        }catch(e){
+        top.location.href = window.location.href;
+        }
+    </script> -->
+  <!-- <script> 
+    if( self == top ) 
+    { document.documentElement.style.display = 'block' ; 
+    }   else { top.location = self.location ; 
+    }   
+    </script> -->
+
+  <script>
+    let domain = window.location.hostname;
+
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    if (domain === "greenlife.eri.com.tw") {
+      gtag("config", "269897575");
+    } else if (domain === "greenlife.epa.gov.tw") {
+      gtag('config', 'G-L49X8Z5PVK');
+    }
+  </script>
+
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/favicon.ico" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
+  <!-- <link href="bootstrap-4.4.1-dist/css/bootstrap.css" rel="stylesheet"> -->
+
+  <script src="https://use.fontawesome.com/releases/v5.3.0/js/all.js"></script>
+
+  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+
+  <script src="https://unpkg.com/react/umd/react.production.min.js" crossorigin></script>
+  <!--facebook分享 -->
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v8.0"
+    nonce="skqD6HS4"></script>
+  <!--twitter分享 -->
+  <script type="text/javascript" async src="https://platform.twitter.com/widgets.js"></script>
+
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+
+  <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+  <script>
+    AOS.init({ disable: "mobile" });
+  </script>
+</body>
+
+</html>

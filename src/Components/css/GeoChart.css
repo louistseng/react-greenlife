@@ -1,0 +1,190 @@
+.font{
+    font-family: "Microsoft JhengHei", sans-serif;
+  }
+
+.li-wrapper{
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border: .5px solid rgb(223, 222, 222);
+    border-radius: 5px;
+    display:flex;
+    height:660px;
+    position:absolute;
+    top:50%;
+    right:50%;
+    transform:translate(200%, -42%);
+    overflow:hidden;
+
+}
+.li-wrapper-h4{
+    width:300px;
+    display:block;
+    position:absolute;
+    top:50%;
+    right:50%;
+    transform:translate(240%, -750%);
+
+}
+
+.county2{
+    border-radius: 5px;
+    width:50%;
+    height:100%;
+    position:absolute;
+    top:50%;
+    right:50%;
+    transform:translate(120%, -50%);
+}
+
+
+
+
+svg .country:hover {
+    stroke: rgba(228, 218, 218, 0.692);
+    stroke-width: 1.5px;
+    cursor: pointer;
+    fill:#F6A65B;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    transform: translate(3.5px, -4px);
+    transition:.25s ease-in-out;
+  }
+  .countyColor{
+    stroke: rgba(228, 218, 218, 0.692);
+    stroke-width: 1.5px;
+    cursor: pointer;
+    fill:#F6A65B;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    transform: translate(3.5px, -4px);
+    transition:.25s ease-in-out;
+  }
+  .taiwanMap {
+    position:absolute;
+    justify-content: center;
+    margin-top:-5%;
+    right:25%;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  .taiwanMapSize{
+      width:900px;
+      height:900px;
+  }
+
+.COUNTYID{
+    color:transparent;
+    font-size:1px;
+    width:28px;
+}
+tbody{
+    display:flex;
+    width:380px;
+    flex-wrap: wrap;
+
+}
+
+th {
+     text-align: left; 
+    
+    }
+th, td { 
+    padding: 18px;
+}
+th, td.COUNTYID { 
+    padding: 0px;
+}
+
+th.center, td.center { 
+    text-align: center; 
+}
+
+th.num, td.num { 
+    text-align: right; 
+}
+.countyValue{
+    font-weight:900;
+    color:#af736bfa;
+    width:65px;
+    text-align:center;
+}
+.countyValueHovered{
+    color:white;
+    font-weight:900;
+}
+
+.tableStyle{
+    background:#F6A65B;
+    color:white;
+  }
+
+tr:hover{
+    background:#F6A65B;
+    color:white;
+}
+
+tr:hover .countyValue{
+    color:white;
+}
+
+.map-li{
+    font-family: '微軟正黑體', sans-serif;
+    list-style-type:none;
+
+}
+
+@media screen and (max-width: 500px) {
+    .taiwanMapSize{
+        width:400px;
+        height:400px;
+        margin:-30px;
+
+    }
+  }
+
+@media screen and (min-width:1100px) and (max-width:1360px){
+    .taiwanMapSize{
+        width:800px;
+        height:800px;
+        margin-top:60px;
+       
+
+    }
+    
+    .li-wrapper{
+        height:60%;
+        width:28%;
+        transform:translate(180%, -55%);
+    }
+    .li-wrapper-h4{
+        transform:translate(200%, -750%);
+    }
+    th, td { 
+        padding: 12px;
+    }
+    .COUNTYID{
+        width:0px;
+    }
+}
+
+@media screen and (min-width:500px) and (max-width:1100px){
+    .taiwanMapSize{
+        width:600px;
+        height:600px;
+        margin:-30px;
+
+    }
+    
+    .li-wrapper{
+        height:440px;
+        width:300px;
+        transform:translate(75%, 10%);
+    }
+    .li-wrapper-h4{
+        transform:translate(80%, -40%);
+    }
+    th, td { 
+        padding: 8px;
+    }
+    .COUNTYID{
+        width:0px;
+    }
+}
+

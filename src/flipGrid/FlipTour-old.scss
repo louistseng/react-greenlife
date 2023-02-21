@@ -1,0 +1,324 @@
+.boldText {
+    font-weight: 800;
+}
+li {
+    list-style: none;
+}
+.flip-title {
+    line-height: 5px;
+}
+/*了解綠生活*/
+.joinBtn span#c {
+    display: inline;
+}
+
+.joinBtn:hover span#c {
+    display: none;
+}
+
+.joinBtn span#d {
+    display: none;
+}
+
+.joinBtn:hover span#d {
+    display: inline;
+}
+
+.containerBox {
+    font-family: "Microsoft JhengHei", sans-serif;
+    color: rgb(83, 81, 81);
+}
+
+.top-logo {
+    width: 100%;
+    margin: 3% 0;
+    border-bottom: 2px solid #f08080;
+}
+.top-logo-home {
+    width: 100%;
+    margin: 3% 0;
+
+    border-bottom: 2px solid #ffcc33;
+}
+
+.top-logo h1 {
+    font-size: calc(12px + 3.5vw);
+    line-height: 110px;
+    vertical-align: middle;
+}
+.top-logo img {
+    width: 180px;
+}
+.inner-article {
+    font-size: calc(12px + 0.65vw);
+    color: #666666;
+    width: 100%;
+    text-align: justify;
+    text-justify: distribute;
+    .link {
+        color: #007bff;
+    }
+}
+.inner-article li {
+    display: flex;
+    justify-content: flex-start;
+    max-height: 46px;
+    line-height: 30px;
+    vertical-align: middle;
+}
+.inner-article li p {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    height: 46px;
+}
+.inner-article p {
+    padding-top: 5px;
+}
+
+.joinBtn {
+    background: rgb(126, 194, 62);
+    color: white;
+    font-weight: 600;
+    padding: 3px 6px;
+    /* width:35%; */
+    /* height:10%; */
+    text-align: center;
+    border-radius: 6px;
+    font-size: calc(14px + 1.1vw);
+    box-shadow: 3px 2px 2px rgb(61, 60, 60);
+    margin: 30px auto;
+}
+
+.tour-btn .joinBtn {
+    /* width:150%; */
+    /* height:40%;  */
+}
+.tour-btn a {
+}
+.joinBtn:hover {
+    background: rgb(206, 197, 197);
+    transform: translate(1%, 2%);
+}
+
+.title-font {
+    font-size: calc(12px + 1.2vw);
+}
+
+.detail-info {
+    margin-top: 3%;
+}
+.tour-top-title {
+    color: #f08080;
+}
+.tour-top-title-home {
+    color: #ffcc33;
+}
+.tour-top-subtitle {
+    color: rgb(148, 209, 98);
+}
+.title-with-line {
+    color: #009966;
+    text-align: center;
+    padding-bottom: 1%;
+    border-bottom: 1.5px solid rgb(223, 223, 223);
+    font-size: calc(16px + 1vw);
+    font-weight: 600;
+}
+.subtitle-icon {
+    width: calc(12px + 2.1vw);
+    height: calc(12px + 2.1vw);
+    margin: 3px;
+}
+
+// 綠色消費 Icon
+// 綠色居家 Icon
+// .tips-list {
+//     .outter-wrapper {
+//         font-size: calc(12px + 0.6vw);
+//         justify-content: space-around;
+//         font-weight: 600;
+// color: #689a7d;
+//         text-align: center;
+//         line-height: 80px;
+//         flex-wrap: wrap;
+//         .link-wrapper {
+//             img {
+//                 filter: invert(65%) sepia(190%) saturate(358%) hue-rotate(103deg) brightness(100%) contrast(30%);
+//             }
+//         }
+//     }
+// }
+
+.tips-list-shopping {
+    margin: 25px 0;
+    .outter-wrapper {
+        font-size: calc(12px + 0.6vw);
+        justify-content: space-around;
+        font-weight: 600;
+        color: #f08080;
+        text-align: center;
+        line-height: 80px;
+        flex-wrap: wrap;
+        min-width: 110px;
+        &:hover {
+            filter: contrast(1.5) brightness(0.5);
+        }
+        .link-wrapper-shopping {
+            img {
+                color: #f08080;
+                filter: hue-rotate(635deg) brightness(100%) contrast(80%);
+            }
+        }
+    }
+}
+.tips-list-home {
+    margin: 25px 0;
+    .outter-wrapper {
+        font-size: calc(12px + 0.6vw);
+        justify-content: space-around;
+        font-weight: 600;
+        color: rgb(118, 187, 58);
+        text-align: center;
+        min-width: 200px;
+        &:hover {
+            filter: contrast(1.5) brightness(0.5);
+            .link-wrapper-home {
+                img {
+                    // filter: hue-rotate(635deg) brightness(100%) contrast(80%);
+                }
+            }
+        }
+    }
+}
+
+.tips-list-shopping div {
+    line-height: calc(16px + 0.6vw);
+    color: #f08080;
+    justify-content: space-around;
+    font-size: calc(12px + 0.6vw);
+    padding: 0;
+}
+
+.tips-list-home div {
+    line-height: calc(16px + 0.6vw);
+    color: rgb(118, 187, 58);
+    justify-content: space-around;
+    font-size: calc(12px + 0.6vw);
+    padding: 0;
+}
+
+.tips-list-shopping img,
+.tips-list-home img {
+    height: calc(75px + 1vw);
+}
+
+.link-wrapper-home:hover,
+.link-wrapper-shopping:hover {
+    filter: brightness(0.9);
+    transition: all 1s;
+    animation: scalling 2s linear 2;
+}
+
+.flip-aniBtn {
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+    background: white;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    transition: all 1s;
+    &:before {
+        content: " ";
+        width: 0%;
+        height: 10px;
+        position: absolute;
+        border: 0px solid #fff;
+        transition: all 0.7s;
+    }
+
+    &:before {
+        bottom: 2px;
+        border-bottom: 4px dotted #0385b1;
+    }
+}
+.inner-article li:hover .flip-aniBtn {
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    &:before,
+    &:after {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.info-btn {
+    border-radius: 15px;
+    color: white;
+    font-weight: 600;
+    min-width: 90px;
+    text-align: center;
+    margin: 3px 8px;
+    padding: 4px 4px;
+    // line-height: 30px;
+    vertical-align: middle;
+}
+.more-btn {
+    color: white;
+    text-decoration: underline;
+    padding: 6px;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    font-size: calc(8px + 0.8vw);
+}
+
+.content-section {
+    .flip-rec-card {
+        width: 25%;
+    }
+}
+.flip-shopping {
+    .flip-rec-card {
+        margin: 4px !important;
+        width: 290px;
+        width: 25%;
+        min-width: 290px;
+        height: calc(130px + 8vw);
+        max-height: 300px;
+        min-height: 200px;
+        .ev-detail-img {
+            height: 72%;
+            object-fit: cover;
+        }
+    }
+}
+
+.inner-article {
+    .flip-rec-card {
+        margin: 4px !important;
+        width: 290px;
+        width: 25%;
+        min-width: 290px;
+        height: calc(130px + 8vw);
+        max-height: 300px;
+        min-height: 200px;
+        .ev-detail-img {
+            height: 72%;
+            object-fit: cover;
+        }
+    }
+}
+
+@keyframes scalling {
+    0% {
+        transform: scale(1.1);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}

@@ -1,0 +1,631 @@
+.expertPoint-table {
+    margin: 15px auto;
+    .expertPoint-table-head {
+        .frequency-wrapper {
+            display: flex;
+            justify-content: center;
+            margin: 8px;
+            .frequency-text {
+                // color: rgb(19, 143, 226);
+                color: #478620;
+                font-size: calc(10px + 1.2vw);
+                align-self: flex-end;
+                // margin-bottom: 13px;
+            }
+            .width-zero {
+                width: 0;
+            }
+            h5 {
+                align-self: flex-end;
+                color: rgb(63, 63, 63);
+                font-size: calc(6px + 0.8vw);
+            }
+        }
+    }
+    .expertPoint-table-body {
+        .getScore-title-td {
+            min-width: 100px;
+        }
+        .score-select-img {
+            width: calc(36px + 1vw);
+            display: block;
+            margin: 0 auto;
+            animation: scrollInImg 0.6s linear 1;
+        }
+        .select-btn {
+            background: #5aa54d;
+            color: white;
+            border-radius: 4px;
+            border: none;
+            padding: 3px 6px;
+            display: block;
+            margin: 0 auto;
+            min-width: calc(30px + 2vw);
+            font-size: calc(4px + 0.9vw);
+            &:hover {
+                animation: rotateOnce 0.4s linear 1;
+            }
+        }
+        .reselect-btn {
+            background: rgb(155, 155, 155);
+            &:hover {
+                background: #5aa54d;
+            }
+        }
+        @keyframes rotateOnce {
+            0% {
+                transform: rotate(0deg);
+            }
+            25% {
+                transform: rotate(8deg);
+            }
+            50% {
+                transform: rotate(0deg);
+            }
+            75% {
+                transform: rotate(-8deg);
+            }
+            100% {
+                transform: rotate(0deg);
+            }
+        }
+        @keyframes scrollInImg {
+            0% {
+                transform: translateX(-800px) rotate(0deg);
+            }
+            100% {
+                transform: translateX(0) rotate(1080deg);
+            }
+        }
+        .score-title-wrapper {
+            display: flex;
+            align-items: center;
+            .title-number {
+                color: #478620;
+                font-size: calc(10px + 1.5vw);
+                margin-right: 15px;
+                font-weight: 700;
+            }
+            .score-text-wrapper {
+                h4 {
+                    color: rgb(252, 91, 70);
+                    font-size: calc(10px + 1.2vw);
+                    margin-bottom: 5px;
+                }
+                h6 {
+                    color: rgb(58, 57, 57);
+                    font-size: calc(6px + 0.8vw);
+                    margin-bottom: 5px;
+                }
+            }
+        }
+        tr:nth-child(odd) {
+            td {
+                background: #fcf4d1;
+            }
+        }
+        td {
+            padding: 1vw 2vw;
+        }
+    }
+}
+
+.score-btn-wrapper {
+    margin: 20px;
+    text-align: center;
+    .send-btn {
+        background: rgb(108, 177, 94);
+        color: white;
+        border: none;
+        border-radius: 6px;
+        padding: 6px 8px;
+        font-size: calc(10px + 0.6vw);
+        font-weight: 600;
+        width: 25%;
+        min-width: 100px;
+        text-align: center;
+        margin: 10px;
+    }
+    .cancel-btn {
+        color: #8a8888;
+        background: white;
+        border: 2px solid #8a8888;
+        border-radius: 6px;
+        padding: 6px 8px;
+        font-size: calc(10px + 0.6vw);
+        font-weight: 600;
+        width: 25%;
+        min-width: 100px;
+    }
+}
+.two-islands-wrapper {
+    display: flex;
+    justify-content: space-around;
+    margin: 8vw auto;
+}
+.island-wrapper {
+    position: relative;
+    .row {
+        padding: 0 !important;
+        width: 100%;
+        margin: 0;
+    }
+    .island-wrapper-island {
+        padding: 10px !important;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        background: url("../../images1/dailyGreen/dailyScore/bg_ocean.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        .iconfaceship_roadmap {
+            position: relative;
+            // margin: 4%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            opacity: 1;
+            filter: brightness(1) contrast(1);
+        }
+        .iconbighead {
+            position: absolute;
+            margin: auto;
+            top: 0;
+            left: 0;
+            transform: translate(100%, 20%);
+            // transform: translate(150%, 70%);
+            width: 25%;
+            height: auto;
+            border-radius: 50%;
+            border: 5px solid #ff4843;
+            opacity: 1;
+            filter: brightness(1) contrast(1);
+            background: white;
+        }
+        .single-island {
+            // width: 10%;
+            // margin: 3%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            h6 {
+                color: white;
+                font-weight: 600;
+                margin-top: 1vw;
+                text-align: center;
+                font-size: calc(8px + 0.9vw);
+            }
+        }
+        img {
+            z-index: 1;
+            opacity: 0.7;
+            filter: brightness(1.2) contrast(0.6);
+            width: 70%;
+            margin: 0 auto;
+        }
+        .currentIsland {
+            transform: scale(1.2);
+            opacity: 1;
+            filter: brightness(1) contrast(1);
+        }
+    }
+    .dotted-line {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        transform: translateY(40%);
+        border-top: 4px dotted rgb(192, 190, 190);
+    }
+}
+
+@media (max-width: 1280px) {
+    .iconbighead {
+        margin: auto;
+        width: 60%;
+        height: auto;
+        border-radius: 50%;
+        border: 5px solid #ff4843;
+    }
+}
+
+@media (max-width: 767px) {
+    .iconbighead {
+        margin: auto;
+        width: 70%;
+        height: auto;
+        border-radius: 50%;
+        border: 5px solid #ff4843;
+    }
+}
+
+.score-island {
+    .top-banner {
+        height: calc(140px + 7vw);
+        overflow: hidden;
+        position: relative;
+        .roadMapBg {
+            width: 120%;
+        }
+        .text-area {
+            position: absolute;
+            top: 0;
+            display: flex;
+            height: 100%;
+            align-items: center;
+            margin: 20px;
+            img {
+                max-width: 20%;
+            }
+        }
+        .top-banner-text {
+            width: 70%;
+            h4 {
+                color: #519e28;
+                font-weight: 600;
+                font-size: calc(12px + 0.8vw);
+            }
+            h5 {
+                font-size: calc(10px + 0.7vw);
+            }
+        }
+    }
+    .ocean-area {
+        width: 100%;
+        background: url("../../images1/dailyGreen/dailyScore/bg_ocean.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 2.5vw 1vw;
+        .single-conversation {
+            display: flex;
+            align-items: center;
+            margin-bottom: calc(20px + 1vw);
+            .left-side-dialogue {
+                background: rgba(255, 255, 255, 0.85);
+                padding: 15px;
+                border-radius: 5px;
+                box-shadow: 1px 1px 4px grey;
+                position: relative;
+                font-weight: 600;
+                line-height: 26px;
+                &:after {
+                    border-color: rgba(255, 255, 255, 0.85) transparent transparent;
+                    border-style: solid solid solid solid;
+                    border-width: 20px 0px 20px 20px;
+                    bottom: 0;
+                    content: "";
+                    height: 0px;
+                    left: -18px;
+                    position: absolute;
+                    width: 0px;
+                }
+                .green-name {
+                    color: #519e28;
+                    font-weight: 600;
+                    font-size: calc(12px + 0.8vw);
+                }
+                h6 {
+                    line-height: calc(10px + 2vw);
+                    font-size: calc(10px + 0.7vw);
+                }
+            }
+        }
+        .boat-container {
+            position: relative;
+            .iconfaceship_roadmap {
+                position: relative;
+                width: 100%;
+                margin: 4%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                opacity: 1;
+                filter: brightness(1) contrast(1);
+            }
+            .iconbighead {
+                position: absolute;
+                margin: auto;
+                top: 0;
+                left: 0;
+                width: 50%;
+                transform: translate(40%, 0%);
+                height: auto;
+                border-radius: 50%;
+                border: 5px solid #ff4843;
+                opacity: 1;
+                filter: brightness(1) contrast(1);
+                background: white;
+            }
+        }
+        .island-and-tooltip {
+            height: 200px;
+            width: 40vw;
+            min-width: 500px;
+            position: relative;
+            &:hover {
+                .score-toolTip {
+                    display: block;
+                }
+                cursor: pointer;
+                .island,
+                .rock,.mini-island,.bottle {
+                    animation: islandmove 1.2s linear alternate-reverse infinite;
+                }
+                .barrel {
+                    animation: barrelmove 1s linear alternate-reverse infinite;
+                }
+                .oceanLight,
+                .barrel-oceanLight,
+                .rock-oceanLight,.mini-island-oceanLight {
+                    animation: wavelightmove 5s linear alternate-reverse infinite;
+                }
+                .oceanDark,
+                .barrel-oceanDark,
+                .rock-oceanDark,.mini-island-oceanDark {
+                    animation: wavedarkmove 3s linear alternate-reverse infinite;
+                }
+                .right-pointer,
+                .left-pointer {
+                    animation: pointmove 4s linear alternate-reverse infinite;
+                }
+            }
+            .score-toolTip {
+                background: rgba(255, 255, 255, 0.9);
+                padding: 15px;
+                border-radius: 20px;
+                width: 270px;
+                z-index: 9;
+                position: absolute;
+                display: none;
+                .text-with-border {
+                    border: 3px dashed #ff4843;
+                    padding: 1vw;
+                    border-radius: 20px;
+                    h4 {
+                        font-size: calc(10px + 0.5vw);
+                    }
+                    .blue-title {
+                        color: #007bb3;
+                        text-align: center;
+                    }
+                    .tooltip-align-between {
+                        display: flex;
+                        justify-content: space-between;
+                    }
+                }
+            }
+            .tooltip-food {
+                left: 10%;
+                bottom: -110%;
+            }
+            .tooltip-tour {
+                right: 0%;
+                bottom: -120%;
+            }
+            .tooltip-office {
+                left: -10%;
+                bottom: -90%;
+            }
+            .tooltip-home {
+                right: -30%;
+                bottom: 50%;
+            }
+            .tooltip-shop {
+                left: -20%;
+                top: -120%;
+            }
+        }
+        .island-wrapper {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+                position: absolute;
+                text-align: center;
+                margin-bottom: -25%;
+            }
+            .barrel {
+                width: 7%;
+                margin-right: 90%;
+                margin-top: -4%;
+                z-index: 20;
+            }
+            .bottle{
+                width: 7%;
+                margin-left: 80%;
+                margin-top: 12%;
+                z-index: 20;
+            }
+            .mini-island {
+                width: 7%;
+                margin-right: 40%;
+                margin-top: 35%;
+                z-index: 20;
+            }
+            .rock {
+                width: 10%;
+                margin-right: 75%;
+                margin-bottom: 10%;
+                z-index: 20;
+            }
+            .mini-island-oceanLight {
+                width: 12%;
+                z-index: 2;
+                margin-right: 40%;
+                margin-top: 35%;
+            }
+            .mini-island-oceanDark {
+                width: 16%;
+                z-index: 1;
+                margin-right: 40%;
+                margin-top: 35%;
+            }
+            .rock-oceanLight {
+                width: 15%;
+                z-index: 2;
+                margin-right: 75%;
+                margin-bottom: 8%;
+            }
+            .rock-oceanDark {
+                width: 20%;
+                z-index: 1;
+                margin-right: 75%;
+                margin-bottom: 8%;
+            }
+            .barrel-oceanLight {
+                width: 15%;
+                z-index: 2;
+                margin-right: 90%;
+            }
+            .barrel-oceanDark {
+                width: 20%;
+                z-index: 1;
+                margin-right: 90%;
+            }
+            .island {
+                width: 50%;
+                z-index: 3;
+                margin-bottom: -16%;
+            }
+            .oceanLight {
+                width: 65%;
+                z-index: 2;
+                transform: rotate(180deg);
+            }
+            .oceanDark {
+                width: 75%;
+                z-index: 1;
+                transform: rotate(180deg);
+            }
+            .right-pointer {
+                margin-left: 90%;
+                width: 20%;
+                // &:hover {
+                //     cursor: pointer;
+                //     .island {
+                //         animation: islandmove 1.2s linear alternate-reverse infinite;
+                //     }
+                //     .oceanLight {
+                //         animation: wavelightmove 5s linear alternate-reverse infinite;
+                //     }
+                //     .oceanDark {
+                //         animation: wavedarkmove 3s linear alternate-reverse infinite;
+                //     }
+                // }
+            }
+            .left-pointer {
+                margin-left: -60%;
+                margin-bottom: -40%;
+                width: 20%;
+                z-index: 10;
+            }
+        }
+    }
+}
+
+@keyframes wavelightmove {
+    0% {
+        transform: rotate(180deg) translateY(-6px);
+    }
+    25% {
+        transform: rotate(175deg) translateY(6px) scale(1.09);
+    }
+    50% {
+        transform: rotate(180deg) translateY(-5px);
+    }
+    75% {
+        transform: rotate(175deg) translateY(5px) scale(1.09);
+    }
+    100% {
+        transform: rotate(180deg) translateY(-5px);
+    }
+}
+
+@keyframes wavedarkmove {
+    0% {
+        transform: rotate(180deg) translate(-8px) scale(1.1);
+    }
+    50% {
+        transform: rotate(180deg) translate(0px) scale(1);
+    }
+    100% {
+        transform: rotate(180deg) translate(-8px) scale(1.1);
+    }
+}
+
+@keyframes islandmove {
+    from {
+        transform: translateY(-5%);
+    }
+    to {
+        transform: translateY(5%);
+    }
+}
+@keyframes barrelmove {
+    from {
+        transform: translateY(-5%) rotate(5deg);
+    }
+    to {
+        transform: translateY(5%) rotate(-5deg);
+    }
+}
+
+@keyframes pointmove {
+    0% {
+        transform: rotate(2deg) translateY(-5px);
+    }
+    25% {
+        transform: rotate(-5deg) translateY(5px);
+    }
+    50% {
+        transform: rotate(2deg) translateY(-5px);
+    }
+    75% {
+        transform: rotate(-5deg) translateY(5px);
+    }
+    100% {
+        transform: rotate(2deg) translateY(-5px);
+    }
+}
+
+@media screen and (max-width: 1110px) {
+    .two-islands-wrapper {
+        display: block;
+        margin: 0 !important;
+    }
+    .score-island {
+        .ocean-area {
+            .island-and-tooltip {
+                margin: 4vw auto;
+                min-width: 300px;
+                width: 65vw;
+                height: calc(100px + 10vw);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 786px) {
+    .island-wrapper {
+        .dotted-line {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 610px) {
+    .expertPoint-table {
+        .expertPoint-table-body {
+            .score-title-wrapper {
+                display: block;
+            }
+            td {
+                padding: 1vw;
+            }
+        }
+    }
+    .containerBox {
+        padding: 0;
+    }
+}

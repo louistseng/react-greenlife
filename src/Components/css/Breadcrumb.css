@@ -1,0 +1,10 @@
+.breadcrumb{
+    margin:0 !important;
+    background-color: transparent !important;
+    font-size:calc(12px + 0.5vw);
+    margin-left: 5% !important;
+    padding:2px;
+  }
+  .breadcrumb-item + .breadcrumb-item::before {
+    content: ">";
+  }

@@ -1,0 +1,314 @@
+.embla {
+  position: relative;
+  
+  padding: 1.2vw;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+
+.event-slider{
+  margin:0!important;
+}
+.embla__viewport-top {
+  overflow: hidden;
+  width: 100%; 
+
+  min-height:120px;
+
+}
+
+
+.embla__viewport.is-draggable {
+  cursor: move;
+  cursor: grab;
+}
+
+.embla__viewport.is-dragging {
+  cursor: grabbing;
+}
+.form-group{
+  margin-bottom:.8vw;
+}
+.embla__container {
+  display: flex;
+  user-select: none;
+  position:relative;
+  transform: translate(0) !important;
+  /* right:500px; */
+  /* height:calc(180px + 10vw); */
+  min-height:50px;
+}
+
+.embla__slide-top {
+  position: relative;
+  width:28%;
+  flex-grow:0 !important;
+  /* left:-80px; */
+  margin:0.8%;
+  border:1px solid rgb(219, 217, 217);
+  box-shadow: 2px 4px 3px rgb(219, 217, 217);
+  height: calc(70px + 16vw);
+  min-height:110px;
+  padding-bottom:6rem;
+  /* border:1px dotted grey; */
+
+}
+
+.embla__slide__inner-top {
+  position: relative;
+  overflow: hidden;
+  height: calc(50px + 12vw);
+  width: 100%;
+
+}
+
+.embla__slide__img-top {
+  position: absolute;
+  display: block;
+  top: 50%;
+  width:100%;
+  object-fit:cover;
+  /* left: 50%;*/
+  /* width: 100%; */
+  /* min-width: */
+  transform: translate(0%, -70%);
+  
+}
+
+.embla__button {
+  outline: 0;
+  cursor: pointer;
+  background-color: transparent;
+  touch-action: manipulation;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 0;
+  width: 30px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  fill: #1bcacd;
+  padding: 0;
+}
+
+.embla__button:disabled {
+  cursor: default;
+  opacity: 0.3;
+}
+
+.embla__button__svg {
+  width: 130%;
+  height: 100%;
+}
+
+.embla__button--prev {
+  left: 27px;
+}
+
+.embla__button--next {
+  right: 27px;
+}
+
+.eventTitle{
+    width:350px;
+    justify-content: start;
+    font-size:calc(14px + 1vw);
+    margin:2vw 20px;
+}
+.eventTitle-search{
+width:350px;
+justify-content: start;
+font-size:calc(22px + 1vw);
+margin:-5vh 20px 0 20px;
+}
+.eventTitle-news{
+  justify-content: start;
+  font-size:calc(22px + 1vw);
+  margin:5vh 15px 0 15px;
+  }
+.eventTitle-search,.eventTitle-news h2{
+  font-size:calc(22px + 1vw);
+}
+.secondTitle{
+  /* width:350px; */
+  justify-content: start;
+  font-size:calc(16px + 1vw);
+  /* margin:-35px 60px; */
+}
+.secondTitle h2{
+  margin-left:10px;
+  font-size:calc(22px + 1vw);
+
+}
+.eventTitle h2{
+    margin-left:10px;
+    font-size:2.2rem;
+}
+
+.green-eventTitle{
+  color:#3cd198;
+  text-align: center;
+  padding-bottom:1%;
+  border-bottom:3px solid rgb(226, 226, 226);
+  font-size:calc(22px + 1vw);
+  font-weight:600;
+}
+.search-form{
+  margin-top:5%;
+  font-size: calc(16px + .6vw);
+}
+.myform{
+  margin-top:2vw;
+}
+.searchBtn{
+background:rgb(33, 139, 95);
+border:none;
+float:right;
+/* height:50px; */
+margin-top:calc(2px + 1vw) ;
+font-size: calc(16px + 1vw);
+font-weight:600;
+
+}
+@media screen and (max-width: 768px) {
+  .searchBtn{
+    float:none;
+    position:absolute;
+   
+  }
+  .secondTitle{
+   
+    margin:0;
+  }
+  .eventTitle-search{
+    margin:18% 20px 2% 20px;
+  }
+}
+.datePicker{
+border:1px solid rgb(211, 211, 211);
+color: rgb(168, 166, 166);
+border-radius: 6px;
+width:45%;
+}
+.dec-wrapper{
+width:100%;
+text-align: center;
+
+bottom:0;
+position:absolute;
+
+
+}
+.ev-detail-img{
+  height:70% !important;
+  
+}
+
+.dec-wrapper .date{
+  color: #6CB15E !important;
+  text-align: center;
+  font-size: calc(12px + .4vw);
+  font-weight: 600;
+  margin-bottom: 0;;
+}
+.carousel-name-text{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color:#505250;
+    display: block;
+    overflow: hidden;
+    font-size: calc(12px + .4vw);
+    font-weight: 600;
+   
+}
+
+
+/* .form-control {
+height:auto;
+} */
+/*頁碼*/
+.page-lists {
+list-style: none;
+display: flex;
+align-items: center;
+justify-content: center;
+width: 100%;
+}
+
+.page-list {
+cursor: pointer;
+color: #ffffff;
+background-color: #5e6248;
+width: 25px;
+margin: 3px;
+text-align: center;
+}
+.custom-btn{
+width:2% !important;
+
+}
+.cusBtn-wrapper{
+display:flex;
+justify-content: space-between;
+width:95%;
+position:absolute;
+margin:-28% -2%;
+}
+.titleImg{
+width:100%;
+margin:0 auto;
+display: block;
+}
+.carouselRec{
+margin-top: 0%;
+}
+
+@media screen and (max-width: 376px) {
+  .embla__slide__img-top {
+    height: 80%;
+  }
+  .carouselRec{
+    margin-top: -10%;
+    }
+}
+
+/*** iPhone and iOS Form Input Zoom Fixes ***/
+/* Fix Input Zoom on devices older than iPhone 5: */
+@media screen and (device-aspect-ratio: 2/3) {
+  select, textarea, input[type="text"], input[type="password"],
+  input[type="datetime"], input[type="datetime-local"],
+  input[type="date"], input[type="month"], input[type="time"],
+  input[type="week"], input[type="number"], input[type="email"],
+  input[type="url"]{ font-size: 16px; }
+}
+
+/* Fix Input Zoom on iPhone 5, 5C, 5S, iPod Touch 5g */
+@media screen and (device-aspect-ratio: 40/71) {
+  select, textarea, input[type="text"], input[type="password"],
+  input[type="datetime"], input[type="datetime-local"],
+  input[type="date"], input[type="month"], input[type="time"],
+  input[type="week"], input[type="number"], input[type="email"],
+  input[type="url"]{ font-size: 16px; }
+}
+
+/* Fix Input Zoom on iPhone 6, iPhone 6s, iPhone 7  */
+@media screen and (device-aspect-ratio: 375/667) {
+  select, textarea, input[type="text"], input[type="password"],
+  input[type="datetime"], input[type="datetime-local"],
+  input[type="date"], input[type="month"], input[type="time"],
+  input[type="week"], input[type="number"], input[type="email"], 
+  input[type="tel"], input[type="url"]{ font-size: 16px; }
+}
+
+/* Fix Input Zoom on iPhone 6 Plus, iPhone 6s Plus, iPhone 7 Plus, iPhone 8, iPhone X, XS, XS Max  */
+@media screen and (device-aspect-ratio: 9/16) {
+  select, textarea, input[type="text"], input[type="password"],
+  input[type="datetime"], input[type="datetime-local"],
+  input[type="date"], input[type="month"], input[type="time"],
+  input[type="week"], input[type="number"], input[type="email"],
+  input[type="tel"], input[type="url"]{ font-size: 16px; }
+}
